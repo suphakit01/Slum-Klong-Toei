@@ -1,3 +1,11 @@
+.center_dis {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
 /*------------------------------------------------------------ Root */
 
 :root {
@@ -5,8 +13,35 @@
     --ci2: #000000 !important;
 }
 
+.myButton {
+    background-color: var(--ci1);
+    border: none;
+    color: white;
+    padding: .5em 1em;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1em;
+    margin: .25em .5em;
+    cursor: pointer;
+    font-family: 'Taviraj', serif !important;
+    border-radius: 100em;
+}
+
+button:focus {
+    outline: 0;
+}
+
 
 /*------------------------------------------------------------ fonts size */
+
+.font_Header {
+    font-family: 'Taviraj', serif !important;
+}
+
+.font_content {
+    font-family: 'Taviraj', serif !important;
+}
 
 .fz_100 {
     font-weight: 100 !important;
@@ -44,6 +79,9 @@
     font-weight: 900 !important;
 }
 
+
+/*------------------------------------------------------------ intro page */
+
 .introBg {
     background-image: url('asset/intro/intro_bg.svg');
     background-repeat: no-repeat;
@@ -51,4 +89,10 @@
     background-position: center;
     width: 100vw;
     height: 100vh;
+    overflow-x: hidden !important;
+    overflow-y: scroll;
+}
+
+.intro_content {
+    text-align: right;
 }
