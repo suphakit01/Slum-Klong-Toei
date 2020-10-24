@@ -1,0 +1,54 @@
+/*------------------------------------------------------------ Root */
+
+:root {
+    --ci1: #6B8CC9 !important;
+    --ci2: #000000 !important;
+}
+
+
+/*------------------------------------------------------------ fonts size */
+
+.fz_100 {
+    font-weight: 100 !important;
+}
+
+.fz_200 {
+    font-weight: 200 !important;
+}
+
+.fz_300 {
+    font-weight: 300 !important;
+}
+
+.fz_400 {
+    font-weight: 400 !important;
+}
+
+.fz_500 {
+    font-weight: 500 !important;
+}
+
+.fz_600 {
+    font-weight: 600 !important;
+}
+
+.fz_700 {
+    font-weight: 700 !important;
+}
+
+.fz_800 {
+    font-weight: 800 !important;
+}
+
+.fz_900 {
+    font-weight: 900 !important;
+}
+
+.introBg {
+    background-image: url('asset/intro/intro_bg.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+}
