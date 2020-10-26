@@ -10,6 +10,11 @@ body {
     align-items: center;
 }
 
+.middle_vertically {
+    display: flex;
+    align-items: center;
+}
+
 
 /*------------------------------------------------------------ Root */
 
@@ -38,6 +43,24 @@ body {
 
 button:focus {
     outline: 0;
+}
+
+.pad_r6vw {
+    padding-right: 6vw !important;
+}
+
+.mar_18vh {
+    margin-top: 18vw;
+}
+
+.vl {
+    border-left: .35em solid var(--ci1);
+    height: 10em;
+}
+
+.hl {
+    border-top: .25em solid var(--ci1);
+    width: 3em;
 }
 
 
@@ -197,11 +220,64 @@ button:focus {
 
 /*------------------------------------------------------------ sec1 */
 
-.sec1 {
-    margin-top: 20vw;
+.contentToBt {
+    position: absolute;
+    bottom: 0;
 }
 
-.myTopic h2 {
+.topicSec1 {
+    margin-bottom: 0;
+    color: var(--ci1);
+    font-family: var(--kanit);
+}
+
+.content_txt {
+    font-size: large;
+}
+
+
+/*------------------------------------------------------------ page1 */
+
+
+/*------------------------------------------------------------ sec2 */
+
+.contentToBt {
+    position: absolute;
+    bottom: 0;
+}
+
+.topicSec2 {
+    margin-bottom: 0;
+    color: var(--ci1);
+    font-family: var(--kanit);
+}
+
+.content_txt {
+    font-size: large;
+}
+
+
+/*------------------------------------------------------------ page1 */
+
+
+/*------------------------------------------------------------ sec3 */
+
+.contentToBt {
+    position: absolute;
+    bottom: 0;
+}
+
+.topicSec3 {
+    margin-bottom: 0;
+    color: var(--ci1);
+    font-family: var(--kanit);
+}
+
+.content_txt {
+    font-size: large;
+}
+
+.qoaote {
     margin-bottom: 0;
     color: var(--ci1);
     font-family: var(--kanit);
