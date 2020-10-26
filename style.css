@@ -125,22 +125,6 @@ button:focus {
 /*------------------------------------------------------------ Cover */
 
 
-/* .introBg {
-    background-image: url('asset/page1/page1_bg.svg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    width: 100vw;
-    height: 100vh;
-    overflow-x: hidden !important;
-    overflow-y: scroll;
-}
-
-.intro_content {
-    text-align: right;
-} */
-
-
 /* .cover_txt {
     position: absolute;
     font-size: large;
@@ -217,7 +201,7 @@ button:focus {
     margin-top: 20vw;
 }
 
-.myTopic h1 {
+.myTopic h2 {
     margin-bottom: 0;
     color: var(--ci1);
     font-family: var(--kanit);
