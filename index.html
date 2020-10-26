@@ -21,24 +21,21 @@
     <!------------------ Link CSS ------------------>
     <link rel="stylesheet" href="style.css">
 
-    <!------------------ Link JS ------------------>
-    <script src="script.js"></script>
-
 </head>
 
 <body>
     <!------------------ Navbar ------------------>
 
     <header id="site-header">
-        <nav class="navbar navbar-expand-lg ">
-            <div class="container my_navBg bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container my_navBg">
 
-                <a href="index.html"></a><img class="navbar-brand" src="asset/logo.svg" alt=""></a>
+                <a href="index.html" class="navbar-brand"><img class="mynavbar_brand" src="asset/logo.svg"></a>
 
                 <!-- Hamburger -->
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
                 <!-- Right Content -->
                 <div class="collapse navbar-collapse collapse w-100 order-3 dual-collapse2" id="navbarNavAltMarkup">
@@ -53,56 +50,47 @@
 
     <!------------------ Cover ------------------>
 
-    <div class="fulid-container">
+    <!-- <p class="cover_txt">
+        สำหรับคนทั่วไป ถ้าไม่ได้อาศัยอยู่ในสลัม คงไม่มีเหตุผลอะไรให้ตัดสินใจเดินเข้าไปในที่แห่งนี้ ที่ที่คนส่วนใหญ่เข้าใจว่าเป็นนรกมากกว่าสวรรค์ ที่ที่เรารับรู้ว่ามีอยู่ แต่ไม่เคยรู้จักหรือสบตา แล้วสลัมคลองเตยจริงๆ เป็นอย่างไร ?
+    </p> -->
+    <section class="zoom center_dis">
+        <img src="asset/page1/page1_layer1.png" id="layer1">
+        <img src="asset/page1/page1_layer2.png" id="layer2">
+        <img src="asset/page1/page1_layer3.png" id="layer3">
+        <img src="asset/page1/page1_layer4.png" id="layer4">
+    </section>
 
-        <div class="introBg">
+    <!------------------ Content ------------------>
+
+    <div class="container">
+
+        <!-- Contents Section #1 -->
+        <div class="sec1">
             <div class="row">
-                <div class="col-6 p-0">
-                    <img src="/asset/page1/page1_cover_img1.svg" alt="">
+                <div class="col-md-7">
+                    <img src="asset/page1/page1_img1.svg" alt="">
                 </div>
 
-                <div class="col-6 pr-5">
-                    <img src="/asset/page1/page1_cover_logo.svg" alt="">
-                    <h4 class="font_content intro_content mt-5">
-                        สำหรับคนทั่วไป ถ้าไม่ได้อาศัยอยู่ในสลัม คงไม่มีเหตุผลอะไรให้ตัดสินใจเดินเข้าไปในที่แห่งนี้ ที่ที่คนส่วนใหญ่เข้าใจว่าเป็นนรกมากกว่าสวรรค์ ที่ที่เรารับรู้ว่ามีอยู่ แต่ไม่เคยรู้จักหรือสบตา แล้วสลัมคลองเตยจริงๆ เป็นอย่างไร ?
-                    </h4>
-                    <a href="page1.html"><button class="myButton">let's get started</button></a>
+                <div class="col-md-4">
+                    <div class="myTopic">
+                        <h1>Life</h1>
+                        <h1>of being too </h1>
+                        <h1>contrast</h1>
+                        <hr>
+                    </div>
+                    <div class="content_txt">
+                        <h5>
+                            คุณสามารถเดินสิบนาทีเพื่อไปห้างสรรพสินค้า และซื้อแบรนด์ดีไซเนอร์ชื่อดัง แต่ขณะเดียวกัน สิบนาทีที่อยู่ห่างออกไป ก็มีผู้คนที่กำลังมีชีวิตอย่างยากจนข้นแค้น
+                        </h5>
+                    </div>
                 </div>
+
+                <div class="col-md-1"></div>
             </div>
         </div>
-    </div>
 
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
+
+    </div>
 
     <!------------------ Navbar ------------------>
 
@@ -110,6 +98,8 @@
         <h5 class="fz_400">copyright © Slum Klong Toei</h5>
     </footer>
 
+    <!------------------ Link JS ------------------>
+    <script src="script.js"></script>
 </body>
 
 </html>

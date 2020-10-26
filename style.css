@@ -1,5 +1,6 @@
 body {
     overflow-x: hidden;
+    background-color: var(--ci3);
 }
 
 .center_dis {
@@ -15,6 +16,7 @@ body {
 :root {
     --ci1: #6B8CC9 !important;
     --ci2: #000000 !important;
+    --ci3: #dee1ea !important;
     --kanit: 'Kanit', sans-serif !important;
     --taviraj: 'Taviraj', serif !important
 }
@@ -44,6 +46,10 @@ button:focus {
 .blue_txt {
     color: var(--ci1) !important;
     font-family: var(--kanit);
+}
+
+.content_txt {
+    font-family: var(--taviraj);
 }
 
 
@@ -96,7 +102,7 @@ button:focus {
 
 /*------------------------------------------------------------ NavBar */
 
-.navbar-brand {
+.mynavbar_brand {
     width: 2.5em;
 }
 
@@ -115,7 +121,11 @@ button:focus {
 
 /*------------------------------------------------------------ page1 */
 
-.introBg {
+
+/*------------------------------------------------------------ Cover */
+
+
+/* .introBg {
     background-image: url('asset/page1/page1_bg.svg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -128,12 +138,96 @@ button:focus {
 
 .intro_content {
     text-align: right;
+} */
+
+
+/* .cover_txt {
+    position: absolute;
+    font-size: large;
+    max-width: 45vh;
+    font-family: var(--taviraj);
+    text-align: right;
+    right: 0;
+    top: 50vh;
+    transform: translateX(-50%);
+    z-index: 96;
+} */
+
+.zoom {
+    width: 100%;
+    height: 1000px;
+    position: relative;
+    overflow: hidden;
+}
+
+.zoom::before {
+    overflow: hidden;
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 200px;
+    z-index: 99;
+    background: linear-gradient(transparent, var(--ci3));
+}
+
+.zoom #layer1 {
+    position: absolute;
+    left: 50%;
+    width: 100%;
+    transform: translateX(-50%);
+    z-index: 98;
+    right: 0;
+}
+
+.zoom #layer2 {
+    position: absolute;
+    left: 50%;
+    width: 100%;
+    transform: translateX(-50%);
+    z-index: 97;
+    right: 0;
+}
+
+.zoom #layer3 {
+    position: absolute;
+    left: 50%;
+    width: 100%;
+    transform: translateX(-50%);
+    z-index: 96;
+    right: 0;
+}
+
+.zoom #layer4 {
+    position: absolute;
+    left: 50%;
+    width: 100%;
+    transform: translateX(-50%);
+    z-index: 95;
+    right: 0;
 }
 
 
 /*------------------------------------------------------------ page1 */
 
+
+/*------------------------------------------------------------ sec1 */
+
+.sec1 {
+    margin-top: 20vw;
+}
+
+.myTopic h1 {
+    margin-bottom: 0;
+    color: var(--ci1);
+    font-family: var(--kanit);
+}
+
+
+/*------------------------------------------------------------ Footer */
+
 .my_footer {
+    margin-top: 10vw;
     background: var(--ci1) !important;
     color: white;
     padding: 2em 2em 1em 2em;
