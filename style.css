@@ -1,3 +1,7 @@
+body {
+    overflow-x: hidden;
+}
+
 .center_dis {
     display: flex;
     flex-direction: column;
@@ -11,6 +15,8 @@
 :root {
     --ci1: #6B8CC9 !important;
     --ci2: #000000 !important;
+    --kanit: 'Kanit', sans-serif !important;
+    --taviraj: 'Taviraj', serif !important
 }
 
 .myButton {
@@ -24,7 +30,7 @@
     font-size: 1em;
     margin: .25em .5em;
     cursor: pointer;
-    font-family: 'Taviraj', serif !important;
+    font-family: var(--kanit);
     border-radius: 100em;
 }
 
@@ -33,14 +39,22 @@ button:focus {
 }
 
 
+/*------------------------------------------------------------ Set Color */
+
+.blue_txt {
+    color: var(--ci1) !important;
+    font-family: var(--kanit);
+}
+
+
 /*------------------------------------------------------------ fonts size */
 
 .font_Header {
-    font-family: 'Taviraj', serif !important;
+    font-family: var(--taviraj);
 }
 
 .font_content {
-    font-family: 'Taviraj', serif !important;
+    font-family: var(--taviraj);
 }
 
 .fz_100 {
@@ -80,10 +94,29 @@ button:focus {
 }
 
 
-/*------------------------------------------------------------ intro page */
+/*------------------------------------------------------------ NavBar */
+
+.navbar-brand {
+    width: 2.5em;
+}
+
+.my_navBg {
+    border-bottom: .12em solid var(--ci1);
+}
+
+#site-header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    transition: all .5s ease;
+    z-index: 100;
+}
+
+
+/*------------------------------------------------------------ page1 */
 
 .introBg {
-    background-image: url('asset/intro/intro_bg.svg');
+    background-image: url('asset/page1/page1_bg.svg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -95,4 +128,17 @@ button:focus {
 
 .intro_content {
     text-align: right;
+}
+
+
+/*------------------------------------------------------------ page1 */
+
+.my_footer {
+    background: var(--ci1) !important;
+    color: white;
+    padding: 2em 2em 1em 2em;
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+    font-family: var(--kanit);
 }
