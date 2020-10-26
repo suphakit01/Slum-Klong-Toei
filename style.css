@@ -15,6 +15,14 @@ body {
     align-items: center;
 }
 
+.pad_r6vw {
+    padding-right: 6vw !important;
+}
+
+.mar_15vh {
+    margin-top: 15vw;
+}
+
 
 /*------------------------------------------------------------ Root */
 
@@ -43,14 +51,6 @@ body {
 
 button:focus {
     outline: 0;
-}
-
-.pad_r6vw {
-    padding-right: 6vw !important;
-}
-
-.mar_18vh {
-    margin-top: 18vw;
 }
 
 .vl {
@@ -214,18 +214,18 @@ button:focus {
     right: 0;
 }
 
+.contentToBt {
+    position: absolute;
+    bottom: 0;
+}
+
 
 /*------------------------------------------------------------ page1 */
 
 
 /*------------------------------------------------------------ sec1 */
 
-.contentToBt {
-    position: absolute;
-    bottom: 0;
-}
-
-.topicSec1 {
+.topicSec1 h1 {
     margin-bottom: 0;
     color: var(--ci1);
     font-family: var(--kanit);
@@ -240,11 +240,6 @@ button:focus {
 
 
 /*------------------------------------------------------------ sec2 */
-
-.contentToBt {
-    position: absolute;
-    bottom: 0;
-}
 
 .topicSec2 {
     margin-bottom: 0;
@@ -262,11 +257,6 @@ button:focus {
 
 /*------------------------------------------------------------ sec3 */
 
-.contentToBt {
-    position: absolute;
-    bottom: 0;
-}
-
 .topicSec3 {
     margin-bottom: 0;
     color: var(--ci1);
@@ -281,6 +271,22 @@ button:focus {
     margin-bottom: 0;
     color: var(--ci1);
     font-family: var(--kanit);
+}
+
+
+/*------------------------------------------------------------ page1 */
+
+
+/*------------------------------------------------------------ sec4 */
+
+.topicSec4 h1 {
+    margin-bottom: 0;
+    color: var(--ci1);
+    font-family: var(--kanit);
+}
+
+.arrow {
+    height: 13em;
 }
 
 
