@@ -170,6 +170,11 @@ button:focus {
     box-shadow: 0 3px 1rem rgba(0, 0, 0, 0.1);
 }
 
+.scrolling-active-t {
+    background-color: red;
+    box-shadow: none !important;
+}
+
 
 /*------------------------------------------------------------ page1 */
 

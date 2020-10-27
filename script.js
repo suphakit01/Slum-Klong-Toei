@@ -8,11 +8,14 @@ window.onscroll = function() {
 
     if (prevScrollpos > currentScrollPos) {
         document.getElementById("site-header").style.top = "0";
-        header.classList.add('scrolling-active', );
-    } else if (prevScrollpos < currentScrollPos) {
+        header.classList.add('scrolling-active');
+    }
+    if (prevScrollpos < currentScrollPos) {
         document.getElementById("site-header").style.top = "-8vh";
-    } else {
-        header.classList.remove('scrolling-active', );
+    }
+    if (prevScrollpos == currentScrollPos) {
+        document.getElementById("site-header").style.top = "0";
+        header.classList.add('scrolling-active-t');
     }
     prevScrollpos = currentScrollPos;
 }
