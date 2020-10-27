@@ -11,12 +11,12 @@ window.onscroll = function() {
         header.classList.add('scrolling-active');
     }
     if (prevScrollpos < currentScrollPos) {
-        document.getElementById("site-header").style.top = "-8vh";
+        document.getElementById("site-header").style.top = "-60vh";
     }
-    if (prevScrollpos == currentScrollPos) {
-        document.getElementById("site-header").style.top = "0";
-        header.classList.add('scrolling-active-t');
-    }
+    // if (prevScrollpos == currentScrollPos) {
+    //     document.getElementById("site-header").style.top = "0";
+    //     header.classList.add('scrolling-active-t');
+    // }
     prevScrollpos = currentScrollPos;
 }
 
