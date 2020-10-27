@@ -19,8 +19,8 @@ body {
     padding-right: 6vw !important;
 }
 
-.mar_15vh {
-    margin-top: 15vw;
+.mar_12vh {
+    margin-top: 12vw;
 }
 
 
@@ -30,27 +30,9 @@ body {
     --ci1: #6B8CC9 !important;
     --ci2: #000000 !important;
     --ci3: #dee1ea !important;
+    --ci4: #c3c8da !important;
     --kanit: 'Kanit', sans-serif !important;
     --taviraj: 'Taviraj', serif !important
-}
-
-.myButton {
-    background-color: var(--ci1);
-    border: none;
-    color: white;
-    padding: .5em 1em;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 1em;
-    margin: .25em .5em;
-    cursor: pointer;
-    font-family: var(--kanit);
-    border-radius: 100em;
-}
-
-button:focus {
-    outline: 0;
 }
 
 .vl {
@@ -123,6 +105,41 @@ button:focus {
 }
 
 
+/*------------------------------------------------------------ Button */
+
+.myButton {
+    background-color: var(--ci1);
+    border: none;
+    color: white;
+    padding: .5em 1em;
+    text-align: center;
+    display: inline-block;
+    font-size: 1em;
+    margin: .25em .5em;
+    cursor: pointer;
+    font-family: var(--kanit);
+    border-radius: 100em;
+    cursor: pointer;
+    text-decoration: none !important;
+    transition: 0.3s;
+}
+
+.myButton:hover {
+    color: white !important;
+    background-color: var(--ci4) !important;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1);
+    transform: scale(1.02);
+}
+
+button:focus {
+    outline: 0;
+}
+
+.unlinks a {
+    text-decoration: none !important;
+}
+
+
 /*------------------------------------------------------------ NavBar */
 
 .mynavbar_brand {
@@ -141,24 +158,23 @@ button:focus {
     z-index: 100;
 }
 
+.navbar {
+    padding-bottom: 0;
+}
+
+
+/* Apply style after scroll */
+
+.scrolling-active {
+    background-color: var(--ci3);
+    box-shadow: 0 3px 1rem rgba(0, 0, 0, 0.1);
+}
+
 
 /*------------------------------------------------------------ page1 */
 
 
 /*------------------------------------------------------------ Cover */
-
-
-/* .cover_txt {
-    position: absolute;
-    font-size: large;
-    max-width: 45vh;
-    font-family: var(--taviraj);
-    text-align: right;
-    right: 0;
-    top: 50vh;
-    transform: translateX(-50%);
-    z-index: 96;
-} */
 
 .zoom {
     width: 100%;
@@ -232,7 +248,7 @@ button:focus {
 }
 
 .content_txt {
-    font-size: large;
+    font-size: medium;
 }
 
 
@@ -248,7 +264,7 @@ button:focus {
 }
 
 .content_txt {
-    font-size: large;
+    font-size: medium;
 }
 
 
@@ -264,7 +280,7 @@ button:focus {
 }
 
 .content_txt {
-    font-size: large;
+    font-size: medium;
 }
 
 .qoaote {
@@ -287,6 +303,26 @@ button:focus {
 
 .arrow {
     height: 13em;
+}
+
+
+/*------------------------------------------------------------ page1 */
+
+
+/*------------------------------------------------------------ sec5 */
+
+.topicSec5 h5 {
+    margin-bottom: 0;
+    color: var(--ci1);
+    font-family: var(--kanit);
+}
+
+.content_txt {
+    font-size: medium;
+}
+
+.img_sec5 {
+    top: -15vh;
 }
 
 
