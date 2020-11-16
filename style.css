@@ -115,6 +115,7 @@ body {
     text-align: center;
     display: inline-block;
     font-size: 1em;
+    font-weight: 900;
     margin: .25em .5em;
     cursor: pointer;
     font-family: var(--kanit);
@@ -122,6 +123,7 @@ body {
     cursor: pointer;
     text-decoration: none !important;
     transition: 0.3s;
+    margin-top: -10vw;
 }
 
 .myButton:hover {
@@ -354,9 +356,10 @@ button:focus {
 }
 
 img.sec5{
-    width: 800px;
+    width: 1100px;
     height: auto;
     margin-bottom: -9vw;
+    margin-left: -10vw;
 }
 
 
@@ -373,10 +376,10 @@ img.sec5{
 }
 
 img.sec6{
-    width: 700px;
+    width: 800px;
     height: auto;
-    padding-left: 2cm;
-    margin-bottom: -10vw;
+    margin-bottom: -7vw;
+    margin-top: -1vw;
 }
 
 
@@ -396,8 +399,8 @@ img.sec7{
     width: 800px;
     height: auto;
     padding-left: 1cm;
-    margin-top: -5vw;
-    margin-bottom: -12vw;
+    margin-top: 2vw;
+    margin-bottom: -5vw;
 }
 
 
@@ -418,7 +421,7 @@ img.sec8{
     height: auto;
     padding-left: 2cm;
     margin-top: -2vw;
-    margin-bottom: 10vw;
+    margin-bottom: -17vw;
 }
 
 
