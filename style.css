@@ -1,6 +1,6 @@
 body {
     overflow-x: hidden;
-    background-color: var(--ci3);
+    background-image: url("/asset/page3/page3_bg.png");
 }
 
 .center_dis {
