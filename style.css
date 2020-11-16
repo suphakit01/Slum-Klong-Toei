@@ -353,4 +353,79 @@ button:focus {
     overflow: hidden;
     text-align: center;
     font-family: var(--kanit);
+    
 }
+
+/*----------------------------fluke-------------------------------- page 2 */
+
+
+/*-------------------------------fluke----------------------------- sec3 */
+
+.mar_13vh{
+    margin-top: 0vw;
+}
+.mar_14vh{
+    margin-top: 10vw;
+}
+
+.fluketext1 h1{
+    margin-bottom: 0;
+    color: var(--ci1);
+    font-family: var(--kanit);
+    text-align: right ;
+    font-weight: bold;
+
+}
+
+.fluketext2 h1{
+    color: var(--ci1);
+    -webkit-text-fill-color: white; 
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color:var(--ci1);
+    margin-bottom: 0;
+
+    text-align: right;
+    font-family: var(--kanit);
+}
+
+.fluketext3{
+    font-family: var(--taviraj);
+    text-align: right;
+}
+
+.flukeimg1{
+    position: relative;
+    top: 50%;
+    
+}
+
+/*----------------------------fluke-------------------------------- page 2 */
+
+
+/*-------------------------------fluke----------------------------- sec4 */
+
+.fluketext4{
+    position: relative;
+    top: 44%;
+    text-align: right;
+}
+
+.flukearrow{
+    position: relative;
+    left :45%;
+    top : 900%;
+    
+}
+
+.flukearrowna{
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+    height: 1em;
+}
+
+.flukeimg2{
+    position: relative;
+    right: 5%;
+}
+
