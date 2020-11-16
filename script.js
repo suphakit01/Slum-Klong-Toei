@@ -74,5 +74,5 @@ document.addEventListener('scroll',
     function(e) {
         var offset = window.pageYOffset;
         scroll = offset;
-        layer4.style.width = (100 + scroll / 5.5) + '%';
+        layer4.style.width = (100 + scroll / 3.5) + '%';
     });
