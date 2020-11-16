@@ -341,6 +341,86 @@ button:focus {
     text-align: right;
 }
 
+/*------------------------------------------------------------ page 3 */
+
+
+/*------------------------------------------------------------ sec5 */
+
+.topic_p3_sec5{
+    font-size: medium;
+    text-align: right;
+    color: var(--ci1);
+    padding-right: 1cm;
+}
+
+img.sec5{
+    width: 800px;
+    height: auto;
+    margin-bottom: -9vw;
+}
+
+
+/*------------------------------------------------------------ page 3 */
+
+
+/*------------------------------------------------------------ sec6 */
+
+.topic_p3_sec6{
+    font-size: medium;
+    text-align: right;
+    color: var(--ci1);
+    padding-right: 1cm;
+}
+
+img.sec6{
+    width: 700px;
+    height: auto;
+    padding-left: 2cm;
+    margin-bottom: -10vw;
+}
+
+
+/*------------------------------------------------------------ page 3 */
+
+
+/*------------------------------------------------------------ sec7 */
+
+.topic_p3_sec7{
+    font-size: medium;
+    text-align: right;
+    color: var(--ci1);
+    padding-right: 1cm;
+}
+
+img.sec7{
+    width: 800px;
+    height: auto;
+    padding-left: 1cm;
+    margin-top: -5vw;
+    margin-bottom: -12vw;
+}
+
+
+/*------------------------------------------------------------ page 3 */
+
+
+/*------------------------------------------------------------ sec8 */
+
+.topic_p3_sec8{
+    font-size: medium;
+    text-align: right;
+    color: var(--ci1);
+    padding-right: 1cm;
+}
+
+img.sec8{
+    width: 900px;
+    height: auto;
+    padding-left: 2cm;
+    margin-top: -2vw;
+    margin-bottom: 10vw;
+}
+
 
 /*------------------------------------------------------------ Footer */
 
