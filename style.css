@@ -520,27 +520,14 @@ body {
 
 /*------------------------------------------------------------ sec1 */
 
-.content_txt_right {
-    font-size: medium;
-    text-align: right;
+.topic_P3_Sec1 h1 {
+    margin-bottom: 0;
+    color: var(--ci1);
+    font-family: var(--kanit);
 }
 
 .content_txt {
     font-size: medium;
-}
-
-.arrow2 {
-    height: 7em;
-}
-
-.animated-gif{
-  width: 40em;
-  height: auto;
-}
-
-.right_dis {
-    display: flex;
-    flex-direction: row-reverse;
 }
 
 /*------------------------------------------------------------ page 3 */
@@ -625,10 +612,10 @@ img.sec8{
 }
 
 .arrow2 {
-    height: 11em;
+    height: 12em;
 }
 
-.animated{
+.img_over{
   width: 45em;
   height: auto;
 }
@@ -636,6 +623,53 @@ img.sec8{
 .right_dis {
     display: flex;
     flex-direction: row-reverse;
+}
+
+.mar_5vh {
+    margin-top: 5vw;
+}
+
+/*------------------------------------------------------------ page 3 */
+
+
+/*------------------------------------------------------------ sec3 */
+
+.arrow2 {
+    height: 12em;
+}
+
+.animated-gif{
+  width: 35em;
+  height: auto;
+}
+
+.content_txt {
+    font-size: medium;
+}
+
+/*------------------------------------------------------------ page 3 */
+
+
+/*------------------------------------------------------------ sec4 */
+
+.content_txt_right {
+    font-size: medium;
+    text-align: right;
+    font-family: var(--taviraj)  /*----- ไม่มีใน Set Color เลยเติมออกมาก่อน -----*/
+}
+
+.arrow2 {
+    height: 12em;
+}
+
+.right_dis {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.img_over2{
+  width: 35em;
+  height: auto;
 }
 
 .mar_5vh {
@@ -647,31 +681,19 @@ img.sec8{
 
 /*------------------------------------------------------------ sec2 */
 
-.arrow2 {
-    height: 11em;
-}
-
-.animated-gif{
-  width: 40em;
-  height: auto;
-}
-
-.content_txt {
-    font-size: medium;
-}
-
-/*------------------------------------------------------------ page 3 */
-
-
-/*------------------------------------------------------------ sec3 */
-
 .content_txt_right {
     font-size: medium;
     text-align: right;
+    font-family: var(--taviraj)  /*----- ไม่มีใน Set Color เลยเติมออกมาก่อน -----*/
 }
 
 .arrow2 {
-    height: 11em;
+    height: 12em;
+}
+
+.img_over{
+  width: 45em;
+  height: auto;
 }
 
 .right_dis {
@@ -679,13 +701,8 @@ img.sec8{
     flex-direction: row-reverse;
 }
 
-.animated2{
-  width: 45em;
-  height: auto;
-}
-
-.mar_5vh {
-    margin-top: 5vw;
+.mt_1vh {
+    margin-top: 1vw;
 }
 
 /*------------------------------------------------------------ Footer */
