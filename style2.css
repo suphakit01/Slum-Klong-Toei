@@ -160,7 +160,7 @@ button:focus {
 /* Apply style after scroll */
 
 .scrolling-active {
-    background-color: #dee1eae5;
+    background-color: var(--ci3);
     box-shadow: 0 3px 1rem rgba(0, 0, 0, 0.1);
 }
 
@@ -173,63 +173,60 @@ button:focus {
 
 /*------------------------------------------------------------ Cover */
 
-.zoom {
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.cover{
     width: 100%;
-    height: 1000px;
+    height: 100vh;
     position: relative;
     overflow: hidden;
 }
 
-.zoom::before {
-    overflow: hidden;
+.cover:after{
     content: '';
     position: absolute;
-    bottom: 0;
     width: 100%;
-    height: 200px;
-    z-index: 99;
-    background: linear-gradient(transparent, transparent);
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.05);
+    z-index: 25;
 }
 
-.zoom #layer1 {
+.trash{
     position: absolute;
-    left: 50%;
-    width: 100%;
-    transform: translateX(-50%);
-    z-index: 98;
+    bottom: -100px;
+    width: 1500px;
     right: 0;
+    z-index: 19;
 }
 
-.zoom #layer2 {
+.slum{
     position: absolute;
-    left: 50%;
-    width: 100%;
-    transform: translateX(-50%);
-    z-index: 97;
+    width: 650px;
+    bottom: -100px;
+    left: -70px;
+    z-index: 20;
+}
+
+.text_cover{
+    position: absolute;
+    width: 1100px;
+    bottom: -100px;
+    left: 0;
+    z-index: 18;
+}
+
+.pole{
+    position: absolute;
+    width: 900px;
+    bottom: 150px;
     right: 0;
-}
-
-.zoom #layer3 {
-    position: absolute;
-    left: 50%;
-    width: 100%;
-    transform: translateX(-50%);
-    z-index: 96;
-    right: 0;
-}
-
-.zoom #layer4 {
-    position: absolute;
-    left: 50%;
-    width: 100%;
-    transform: translateX(-50%);
-    z-index: 95;
-    right: 0;
-}
-
-.contentToBt {
-    position: absolute;
-    bottom: 0;
+    z-index: 17;
 }
 
 /*------------------------------------------------------------ page1 */
@@ -304,22 +301,13 @@ button:focus {
     font-family: var(--kanit);
 }
 
-.contentSec5{
-    margin-top: 20vw;
-    position: absolute;
-}
-
 .content_txt {
     font-size: medium;
 }
 
-.sec5xButton{
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 40vw;
-    width: 100%;
-    padding: 10vh 0 10vh 0;
-    background-image: url('asset/page1/page1_img6.png');
+.img_sec5 {
+    /* position: absolute; */
+    top: -15vh;
 }
 
 /*------------------------------------------------------------ page2 */
@@ -331,7 +319,7 @@ body {
 }
 
 .timeline {
-    border-left: 3px solid var(--ci1);
+    border-left: 3px solid #727cf5;
     border-bottom-right-radius: 4px;
     border-top-right-radius: 4px;
     margin: 0 auto;
@@ -405,8 +393,8 @@ body {
 }
 
 .timeline .event:after {
-    -webkit-box-shadow: 0 0 0 3px var(--ci1);
-    box-shadow: 0 0 0 3px var(--ci1);
+    -webkit-box-shadow: 0 0 0 3px #727cf5;
+    box-shadow: 0 0 0 3px #727cf5;
     left: -55.8px;
     background: #fff;
     border-radius: 50%;
@@ -440,79 +428,6 @@ body {
 .rtl .timeline .event::after {
     left: 0;
     right: -55.8px;
-}
-
-/*----------------------------fluke-------------------------------- page 2 */
-
-
-/*-------------------------------fluke----------------------------- sec3 */
-
-.mar_13vh{
-    margin-top: 0vw;
-}
-.mar_14vh{
-    margin-top: 10vw;
-}
-
-.fluketext1 h1{
-    margin-bottom: 0;
-    color: var(--ci1);
-    font-family: var(--kanit);
-    text-align: right ;
-    font-weight: bold;
-
-}
-
-.fluketext2 h1{
-    color: var(--ci1);
-    -webkit-text-fill-color: white; 
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color:var(--ci1);
-    margin-bottom: 0;
-
-    text-align: right;
-    font-family: var(--kanit);
-}
-
-.fluketext3{
-    font-family: var(--taviraj);
-    text-align: right;
-}
-
-.flukeimg1{
-    position: relative;
-    top: 50%;
-    
-}
-
-/*----------------------------fluke-------------------------------- page 2 */
-
-
-/*-------------------------------fluke----------------------------- sec4 */
-
-.fluketext4{
-    position: relative;
-    top: 44%;
-    text-align: right;
-}
-
-.flukearrow{
-    position: relative;
-    left :45%;
-    top : 900%;
-    
-}
-
-.flukearrowna{
-    display: flex;
-    flex-direction: column;
-    align-items: right;
-    height: 1em;
-}
-
-.flukeimg2{
-    position: relative;
-    right: 5%;
 }
 
 /*------------------------------------------------------------ page 3 */
@@ -627,7 +542,7 @@ img.sec8{
 /*------------------------------------------------------------ Footer */
 
 .my_footer {
-    /* margin-top: 10vw; */
+    margin-top: 10vw;
     background: var(--ci1) !important;
     color: white;
     padding: 2em 2em 1em 2em;
