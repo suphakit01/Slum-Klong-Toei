@@ -555,7 +555,7 @@ body {
     padding-right: 1cm;
 }
 
-img.sec5{
+.sec5{
     width: 1100px;
     height: auto;
     margin-bottom: -9vw;
@@ -575,7 +575,7 @@ img.sec5{
     padding-right: 1cm;
 }
 
-img.sec6{
+.sec6{
     width: 800px;
     height: auto;
     margin-bottom: -7vw;
@@ -595,7 +595,7 @@ img.sec6{
     padding-right: 1cm;
 }
 
-img.sec7{
+.sec7{
     width: 800px;
     height: auto;
     padding-left: 1cm;
@@ -616,7 +616,7 @@ img.sec7{
     padding-right: 1cm;
 }
 
-img.sec8{
+.sec8{
     width: 1300px;
     height: auto;
     margin-top: -9vw;
@@ -629,6 +629,37 @@ img.sec8{
     margin-bottom: 45vh;
     position:relative;
     z-index: 1;
+}
+
+/*------------------------------------------------------------ page 3 */
+
+
+/*------------------------------------------------------------ Responsive */
+
+
+@media screen and (max-width:800px){
+    .topic_p3_sec5, .topic_p3_sec6, .topic_p3_sec7, .topic_p3_sec8{
+        width:100%;
+        text-align: right;
+    }
+    .content_txt, .pb-4 {
+        width:100%;
+        text-align: right;
+        padding-right: 1cm;
+    }
+    .sec5{
+        margin-left: 0vw;
+    }
+
+    .sec8{
+        margin-left: -1vw;
+    }
+}
+
+.P3responsive{
+    width: 100%;
+    max-width: 600px;
+    height: auto;
 }
 
 /*------------------------------------------------------------ Footer */
