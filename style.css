@@ -617,11 +617,18 @@ img.sec7{
 }
 
 img.sec8{
-    width: 900px;
+    width: 1300px;
     height: auto;
-    padding-left: 2cm;
-    margin-top: -2vw;
-    margin-bottom: -17vw;
+    margin-top: -9vw;
+    margin-bottom: -32vw;
+    margin-left: -7vw;
+    position:relative;
+}
+
+.P3Button{
+    margin-bottom: 45vh;
+    position:relative;
+    z-index: 1;
 }
 
 /*------------------------------------------------------------ Footer */
@@ -635,4 +642,6 @@ img.sec8{
     overflow: hidden;
     text-align: center;
     font-family: var(--kanit);
+    position:relative;
+    z-index: 1;
 }
