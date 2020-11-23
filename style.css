@@ -556,10 +556,11 @@ body {
 }
 
 .sec5{
-    width: 1100px;
+    /**width: 1100px;**/
+    width:100%;
     height: auto;
     margin-bottom: -9vw;
-    margin-left: -10vw;
+    margin-left: 0vw;
 }
 
 
@@ -576,7 +577,8 @@ body {
 }
 
 .sec6{
-    width: 800px;
+    /**width: 800px;**/
+    width:100%;
     height: auto;
     margin-bottom: -7vw;
     margin-top: -1vw;
@@ -596,7 +598,8 @@ body {
 }
 
 .sec7{
-    width: 800px;
+    /**width: 800px;**/
+    width:100%;
     height: auto;
     padding-left: 1cm;
     margin-top: 2vw;
@@ -617,11 +620,10 @@ body {
 }
 
 .sec8{
-    width: 1300px;
+    /**width: 1300px;**/
+    width:100%;
     height: auto;
-    margin-top: -9vw;
-    margin-bottom: -32vw;
-    margin-left: -7vw;
+    margin-bottom: -22vw;
     position:relative;
 }
 
