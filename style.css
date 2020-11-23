@@ -40,12 +40,20 @@ body {
     padding-right: 6vw !important;
 }
 
+.mt_8vh {
+    margin-top: 8vh;
+}
+
 .mt_10vh {
-    margin-top: 10vw;
+    margin-top: 10vh;
 }
 
 .mt_20vh {
-    margin-top: 20vw;
+    margin-top: 20vh;
+}
+
+.mt_25vh {
+    margin-top: 25vh;
 }
 
 .contentToBt {
@@ -167,12 +175,11 @@ button:focus {
 }
 
 .navbar-nav a:hover {
-    box-shadow: 0px 0.4em var(--ci1);
-
+    box-shadow: 0px 0.25em var(--ci1);
 }
 
 .navbar-nav a.active {
-    box-shadow: 0px 0.4em var(--ci1);
+    box-shadow: 0px 0.25em var(--ci1);
 }
 
 /* Apply style after scroll */
@@ -193,6 +200,7 @@ button:focus {
 
 .keyart .keyart_layer {
     height: auto;
+    bottom: 0;
 }
 
 #parallax {
@@ -285,8 +293,8 @@ button:focus {
 }
 
 .topicBox {
-    position:absolute;
-    background-color: rgba(255, 255, 255, 0.657);
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.753);
     padding: 2em;
 }
 
@@ -338,8 +346,8 @@ button:focus {
     font-size: 2.5em;
 }
 
-.arrow {
-    height: 13em;
+.arrow_p1s4 {
+    height: 15em;
 }
 
 /*------------------------------------------------------------ page1 */
@@ -372,51 +380,65 @@ button:focus {
 
 /*------------------------------------------------------------ page2 */
 
-/*------------------------------------------------------------ sec1 */
+/*---------------------Aommy---------------------------------- sec1 */
 
 .timeline {
-    border-left: 3px solid var(--ci1);
+    border-left: 3px solid #6B8CC9;
     border-bottom-right-radius: 4px;
     border-top-right-radius: 4px;
     margin: 0 auto;
     letter-spacing: 0.3px;
-    position: relative;
-    line-height: 1.4em;
-    font-size: 1.03em;
+    position: static;
+    line-height: 1.5em;
     padding: 50px;
     list-style: none;
     text-align: left;
     max-width: 50%;
+    font-family: var(--taviraj);
 }
 
-@media (max-width: 767px) {
-    .timeline {
-        max-width: 98%;
-        padding: 25px;
-    }
+.timeline .item {
+    border-left: 3px solid #6B8CC9;
+}
+
+.timeline li:last-child {
+    border-left: 3px solid #6B8CC9;
+    border-bottom-right-radius: 4px;
+    border-top-right-radius: 0px;
 }
 
 .timeline h1 {
-    font-weight: 300;
     font-size: 1.4em;
+    font-family: var(--taviraj);
 }
 
 .timeline h2, .timeline h3 {
-    font-weight: 600;
+    font-family: var(--taviraj);
     font-size: 1rem;
     margin-bottom: 10px;
+}
+
+.timeline .topictimelineblue {
+    font-family: var(--kanit) !important;
+    color: #6B8CC9;
+    font-size: 150%;
+    position: relative;
+}
+
+.timeline .topictimelineblue h2 {
+    font-family: var(--kanit) !important;
+    font-size: 2rem;
+}
+
+.timeline .topictimeline {
+    font-family: var(--taviraj);
+    position: relative;
 }
 
 .timeline .event {
     padding-bottom: 40px;
     margin-bottom: 40px;
     position: relative;
-}
-
-@media (max-width: 767px) {
-    .timeline .event {
-        padding-top: 30px;
-    }
 }
 
 .timeline .event:last-of-type {
@@ -432,37 +454,24 @@ button:focus {
 }
 
 .timeline .event:before {
-    left: -207px;
-    content: attr(data-date);
+    left: -340px;
     text-align: right;
-    font-weight: 100;
-    font-size: 0.9em;
+    content: attr(data-date);
+    color: var(--ci1);
+    font-family: var(--kanit);
+    font-size: 150%;
     min-width: 120px;
 }
 
-@media (max-width: 767px) {
-    .timeline .event:before {
-        left: 0px;
-        text-align: left;
-    }
-}
-
 .timeline .event:after {
-    -webkit-box-shadow: 0 0 0 3px var(--ci1);
-    box-shadow: 0 0 0 3px var(--ci1);
-    left: -55.8px;
-    background: #fff;
-    border-radius: 50%;
-    height: 9px;
-    width: 9px;
+    left: -62.5px;
+    height: 5px;
+    width: 5px;
     content: "";
-    top: 5px;
-}
-
-@media (max-width: 767px) {
-    .timeline .event:after {
-        left: -31.8px;
-    }
+    background-color: #6B8CC9;
+    height: 2px;
+    width: 20px;
+    margin: 12px auto;
 }
 
 .rtl .timeline {
@@ -485,45 +494,47 @@ button:focus {
     right: -55.8px;
 }
 
+.topic_p3s1 h2 {
+    margin-bottom: 0;
+    color: var(--ci1);
+    font-family: var(--kanit);
+}
 
 /*------------------------------------------------------------ page2 */
 
 /*------------------------------------------------------------ sec2 */
 
-
 /*------------------------------------------------------------ page2 */
 
 /*------------------------------------------------------------ sec3 */
 
-.topic_p2s3{
+.topic_p2s3 {
     font-family: var(--taviraj);
     text-align: right;
     padding-right: 0vw;
     padding-top: 1vw;
 }
 
-.topic_p2s3 h1{
+.topic_p2s3 h1 {
     position: relative;
     margin-bottom: 0;
     color: var(--ci1);
     font-family: var(--kanit);
-    text-align: right ;
+    text-align: right;
     font-weight: bold;
 }
 
-.content_txt_p2s3{
+.content_txt_p2s3 {
     text-align: right;
     padding-right: 0vw;
     padding-top: 1vw;
-
 }
-
 
 .topic_p2s3_subtext {
     color: transparent;
-    -webkit-text-fill-color: transparent; 
+    -webkit-text-fill-color: transparent;
     -webkit-text-stroke-width: 1.75px;
-    -webkit-text-stroke-color:var(--ci1);
+    -webkit-text-stroke-color: var(--ci1);
     margin-bottom: 0;
     text-align: right;
     font-family: var(--kanit);
@@ -533,14 +544,14 @@ button:focus {
 
 /*------------------------------------------------------------ sec4 */
 
-.topic2Sec4{
+.topic2Sec4 {
     position: relative;
     right: 0vw;
-    top:16vw;
+    top: 16vw;
     text-align: right;
 }
 
-.arrow_p2s4{
+.arrow_p2s4 {
     position: relative;
     bottom: 22vw;
     width: 2vw;
@@ -609,33 +620,33 @@ button:focus {
 
 /*------------------------------------------------------------ page 3 */
 
-
 /*------------------------------------------------------------ sec2 */
 
 .content_txt_right {
     font-size: medium;
     text-align: right;
-    font-family: var(--taviraj)  /*----- ไม่มีใน Set Color เลยเติมออกมาก่อน -----*/
+    font-family: var(--taviraj)/*----- ไม่มีใน Set Color เลยเติมออกมาก่อน -----*/
 }
 
-.arrow2 {
+.arrow_p3s2 {
     height: 8em;
 }
 
-.img_over{
-  width: 45em;
-  height: auto;
+.img_over {
+    width: 45em;
+    height: auto;
 }
 
 .right_dis {
     display: flex;
     flex-direction: row-reverse;
 }
+
 /*------------------------------------------------------------ page 3 */
 
 /*------------------------------------------------------------ sec3 */
 
-.arrow2 {
+.arrow_p3s3 {
     height: 7em;
 }
 
@@ -654,15 +665,14 @@ button:focus {
     height: 8em;
 }
 
-.animated-gif{
-  width: 35em;
-  height: auto;
+.animated-gif {
+    width: 35em;
+    height: auto;
 }
 
 .content_txt {
     font-size: medium;
 }
-
 
 /*------------------------------------------------------------ page 3 */
 
@@ -671,10 +681,10 @@ button:focus {
 .content_txt_right {
     font-size: medium;
     text-align: right;
-    font-family: var(--taviraj)  /*----- ไม่มีใน Set Color เลยเติมออกมาก่อน -----*/
+    font-family: var(--taviraj)
 }
 
-.arrow2 {
+.arrow_p3s4 {
     height: 8em;
 }
 
@@ -683,9 +693,9 @@ button:focus {
     flex-direction: row-reverse;
 }
 
-.img_over2{
-  width: 35em;
-  height: auto;
+.img_over2 {
+    width: 35em;
+    height: auto;
 }
 
 .mar_5vh {
@@ -704,7 +714,6 @@ button:focus {
 }
 
 .sec4 {
-    /**width: 1100px;**/
     width: 100%;
     height: auto;
     margin-bottom: -9vw;
@@ -716,6 +725,7 @@ button:focus {
 /*------------------------------------------------------------ sec5 */
 
 .topic_p3_sec5 {
+    font-family: var(--kanit);
     font-size: medium;
     text-align: right;
     color: var(--ci1);
@@ -723,7 +733,6 @@ button:focus {
 }
 
 .sec5 {
-    /**width: 1100px;**/
     width: 100%;
     height: auto;
     margin-bottom: -9vw;
@@ -735,14 +744,13 @@ button:focus {
 /*------------------------------------------------------------ sec6 */
 
 .topic_p3_sec6 {
-    font-size: medium;
+    font-family: var(--kanit);
     text-align: right;
     color: var(--ci1);
     padding-right: 1cm;
 }
 
 .sec6 {
-    /**width: 800px;**/
     width: 100%;
     height: auto;
 }
@@ -752,14 +760,12 @@ button:focus {
 /*------------------------------------------------------------ sec7 */
 
 .topic_p3_sec7 {
-    font-size: medium;
+    font-family: var(--kanit);
     text-align: right;
     color: var(--ci1);
-    padding-right: 1cm;
 }
 
 .sec7 {
-    /**width: 800px;**/
     width: 100%;
     height: auto;
 }
@@ -769,10 +775,9 @@ button:focus {
 /*------------------------------------------------------------ sec8 */
 
 .topic_p3_sec8 {
-    font-size: medium;
+    font-family: var(--kanit);
     text-align: right;
     color: var(--ci1);
-    padding-right: 1cm;
 }
 
 .sec8 {
@@ -790,7 +795,6 @@ button:focus {
     padding: 10vh 0 10vh 0;
     background-image: url('asset/page3/page3_img8.png');
 }
-
 
 /*------------------------------------------------------------ Footer */
 
