@@ -601,6 +601,25 @@ body {
 
 /*------------------------------------------------------------ sec5 */
 
+.topic_p3_sec4 {
+    font-size: medium;
+    text-align: right;
+    color: var(--ci1);
+    padding-right: 1cm;
+}
+
+.sec4 {
+    /**width: 1100px;**/
+    width: 100%;
+    height: auto;
+    margin-bottom: -9vw;
+    margin-left: 0vw;
+}
+
+/*------------------------------------------------------------ page 3 */
+
+/*------------------------------------------------------------ sec5 */
+
 .topic_p3_sec5 {
     font-size: medium;
     text-align: right;
