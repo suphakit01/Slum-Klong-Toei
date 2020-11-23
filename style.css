@@ -1,27 +1,6 @@
 body {
-    overflow-x: hidden !important;
+    overflow-x: hidden;
     background-color: var(--ci3);
-}
-
-/*------------------------------------------------------------ Root / Components */
-
-:root {
-    --ci1: #6B8CC9 !important;
-    --ci2: #000000 !important;
-    --ci3: #dee1ea !important;
-    --ci4: #c3c8da !important;
-    --kanit: 'Kanit', sans-serif !important;
-    --taviraj: 'Taviraj', serif !important
-}
-
-.vl {
-    border-left: .35em solid var(--ci1);
-    height: 10vw;
-}
-
-.hl {
-    border-top: .25em solid var(--ci1);
-    width: 3em;
 }
 
 .center_dis {
@@ -40,18 +19,32 @@ body {
     padding-right: 6vw !important;
 }
 
-.mt_12vh {
+.mar_12vh {
     margin-top: 12vw;
 }
 
-.mt_20vh {
-    margin-top: 20vw;
+
+/*------------------------------------------------------------ Root */
+
+:root {
+    --ci1: #6B8CC9 !important;
+    --ci2: #000000 !important;
+    --ci3: #dee1ea !important;
+    --ci4: #c3c8da !important;
+    --kanit: 'Kanit', sans-serif !important;
+    --taviraj: 'Taviraj', serif !important
 }
 
-.contentToBt {
-    position: absolute;
-    bottom: 0;
+.vl {
+    border-left: .35em solid var(--ci1);
+    height: 10em;
 }
+
+.hl {
+    border-top: .25em solid var(--ci1);
+    width: 3em;
+}
+
 
 /*------------------------------------------------------------ Set Color */
 
@@ -64,7 +57,8 @@ body {
     font-family: var(--taviraj);
 }
 
-/*------------------------------------------------------------ set fonts */
+
+/*------------------------------------------------------------ fonts size */
 
 .font_Header {
     font-family: var(--taviraj);
@@ -110,6 +104,7 @@ body {
     font-weight: 900 !important;
 }
 
+
 /*------------------------------------------------------------ Button */
 
 .myButton {
@@ -144,10 +139,11 @@ button:focus {
     text-decoration: none !important;
 }
 
+
 /*------------------------------------------------------------ NavBar */
 
 .mynavbar_brand {
-    width: 2em;
+    width: 2.5em;
 }
 
 .my_navBg {
@@ -166,18 +162,11 @@ button:focus {
     padding-bottom: 0;
 }
 
-.navbar-nav a:hover {
-    border-bottom: 3px solid var(--ci1);
-}
-
-.navbar-nav a.active {
-    border-bottom: 3px solid var(--ci1);
-}
 
 /* Apply style after scroll */
 
 .scrolling-active {
-    background-color: #dee1eae5;
+    background-color: var(--ci3);
     box-shadow: 0 3px 1rem rgba(0, 0, 0, 0.1);
 }
 
@@ -186,40 +175,17 @@ button:focus {
     box-shadow: none !important;
 }
 
+
 /*------------------------------------------------------------ page1 */
+
 
 /*------------------------------------------------------------ Cover */
 
-.keyart .keyart_layer {
-    height: auto;
-}
-
-#parallax {
-    display: block;
-}
-
-.keyart {
-    position: relative;
-    z-index: 10;
-}
-
-.keyart_layer {
-    width: 100%;
-    position: absolute;
-}
-
-.keyart_layer.parallax {
-    position: fixed;
-}
-
-/* last parallax */
-
-/* .zoom {
+.zoom {
     width: 100%;
     height: 1000px;
     position: relative;
     overflow: hidden;
-
 }
 
 .zoom::before {
@@ -230,7 +196,7 @@ button:focus {
     width: 100%;
     height: 200px;
     z-index: 99;
-    background: linear-gradient(transparent, transparent);
+    background: linear-gradient(transparent, var(--ci3));
 }
 
 .zoom #layer1 {
@@ -267,9 +233,16 @@ button:focus {
     transform: translateX(-50%);
     z-index: 95;
     right: 0;
-} */
+}
+
+.contentToBt {
+    position: absolute;
+    bottom: 0;
+}
+
 
 /*------------------------------------------------------------ page1 */
+
 
 /*------------------------------------------------------------ sec1 */
 
@@ -283,7 +256,9 @@ button:focus {
     font-size: medium;
 }
 
+
 /*------------------------------------------------------------ page1 */
+
 
 /*------------------------------------------------------------ sec2 */
 
@@ -297,7 +272,9 @@ button:focus {
     font-size: medium;
 }
 
+
 /*------------------------------------------------------------ page1 */
+
 
 /*------------------------------------------------------------ sec3 */
 
@@ -317,7 +294,9 @@ button:focus {
     font-family: var(--kanit);
 }
 
+
 /*------------------------------------------------------------ page1 */
+
 
 /*------------------------------------------------------------ sec4 */
 
@@ -331,7 +310,9 @@ button:focus {
     height: 13em;
 }
 
+
 /*------------------------------------------------------------ page1 */
+
 
 /*------------------------------------------------------------ sec5 */
 
@@ -341,219 +322,123 @@ button:focus {
     font-family: var(--kanit);
 }
 
-.contentSec5 {
-    margin-top: 20vw;
-    position: absolute;
-}
-
 .content_txt {
     font-size: medium;
 }
 
-.P1Button {
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 40vw;
-    width: 100%;
-    padding: 10vh 0 10vh 0;
-    background-image: url('asset/page1/page1_img6.png');
+.img_sec5 {
+    top: -15vh;
 }
 
-/*------------------------------------------------------------ page2 */
+
+/*------------------------------------------------------------ page 3 */
+
 
 /*------------------------------------------------------------ sec1 */
 
-body {
-    margin-top: auto;
-}
-
-.timeline {
-    border-left: 3px solid var(--ci1);
-    border-bottom-right-radius: 4px;
-    border-top-right-radius: 4px;
-    margin: 0 auto;
-    letter-spacing: 0.3px;
-    position: relative;
-    line-height: 1.4em;
-    font-size: 1.03em;
-    padding: 50px;
-    list-style: none;
-    text-align: left;
-    max-width: 50%;
-}
-
-@media (max-width: 767px) {
-    .timeline {
-        max-width: 98%;
-        padding: 25px;
-    }
-}
-
-.timeline h1 {
-    font-weight: 300;
-    font-size: 1.4em;
-}
-
-.timeline h2, .timeline h3 {
-    font-weight: 600;
-    font-size: 1rem;
-    margin-bottom: 10px;
-}
-
-.timeline .event {
-    padding-bottom: 40px;
-    margin-bottom: 40px;
-    position: relative;
-}
-
-@media (max-width: 767px) {
-    .timeline .event {
-        padding-top: 30px;
-    }
-}
-
-.timeline .event:last-of-type {
-    padding-bottom: 0;
-    margin-bottom: 0;
-    border: none;
-}
-
-.timeline .event:before, .timeline .event:after {
-    position: absolute;
-    display: block;
-    top: 0;
-}
-
-.timeline .event:before {
-    left: -207px;
-    content: attr(data-date);
+.content_txt_right {
+    font-size: medium;
     text-align: right;
-    font-weight: 100;
-    font-size: 0.9em;
-    min-width: 120px;
 }
 
-@media (max-width: 767px) {
-    .timeline .event:before {
-        left: 0px;
-        text-align: left;
-    }
-}
 
-.timeline .event:after {
-    -webkit-box-shadow: 0 0 0 3px var(--ci1);
-    box-shadow: 0 0 0 3px var(--ci1);
-    left: -55.8px;
-    background: #fff;
-    border-radius: 50%;
-    height: 9px;
-    width: 9px;
-    content: "";
-    top: 5px;
-}
+/*------------------------------------------------------------ Footer */
 
-@media (max-width: 767px) {
-    .timeline .event:after {
-        left: -31.8px;
-    }
-}
-
-.rtl .timeline {
-    border-left: 0;
-    text-align: right;
-    border-bottom-right-radius: 0;
-    border-top-right-radius: 0;
-    border-bottom-left-radius: 4px;
-    border-top-left-radius: 4px;
-    border-right: 3px solid #727cf5;
-}
-
-.rtl .timeline .event::before {
-    left: 0;
-    right: -170px;
-}
-
-.rtl .timeline .event::after {
-    left: 0;
-    right: -55.8px;
+.my_footer {
+    margin-top: 10vw;
+    background: var(--ci1) !important;
+    color: white;
+    padding: 2em 2em 1em 2em;
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+    font-family: var(--kanit);
+    
 }
 
 /*----------------------------fluke-------------------------------- page 2 */
 
+
 /*-------------------------------fluke----------------------------- sec3 */
 
-.mar_13vh {
+.mar_13vh{
     margin-top: 0vw;
 }
-
-.mar_14vh {
+.mar_14vh{
     margin-top: 10vw;
 }
 
-.fluketext1 h1 {
+.fluketext1 h1{
     margin-bottom: 0;
     color: var(--ci1);
     font-family: var(--kanit);
-    text-align: right;
+    text-align: right ;
     font-weight: bold;
+
 }
 
-.fluketext2 h1 {
+.fluketext2 h1{
     color: var(--ci1);
-    -webkit-text-fill-color: white;
+    -webkit-text-fill-color: white; 
     -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: var(--ci1);
+    -webkit-text-stroke-color:var(--ci1);
     margin-bottom: 0;
+
     text-align: right;
     font-family: var(--kanit);
 }
 
-.fluketext3 {
+.fluketext3{
     font-family: var(--taviraj);
     text-align: right;
 }
 
-.flukeimg1 {
+.flukeimg1{
     position: relative;
     top: 50%;
+    
 }
 
 /*----------------------------fluke-------------------------------- page 2 */
 
+
 /*-------------------------------fluke----------------------------- sec4 */
 
-.fluketext4 {
+.fluketext4{
     position: relative;
     top: 44%;
     text-align: right;
 }
 
-.flukearrow {
+.flukearrow{
     position: relative;
-    left: 45%;
-    top: 900%;
+    left :45%;
+    top : 900%;
+    
 }
 
-.flukearrowna {
+.flukearrowna{
     display: flex;
     flex-direction: column;
     align-items: right;
     height: 1em;
 }
 
-.flukeimg2 {
+.flukeimg2{
     position: relative;
     right: 5%;
 }
 
-/*------------------------------------------------------------ page 3 */
 
-/*------------------------------------------------------------ sec1 */
+/*------------------------------------------------------------ sec3 */
 
-.topic_P3_Sec1 {
-    margin-bottom: 0;
-    color: var(--ci1);
-    font-family: var(--kanit);
+.arrow2 {
+    height: 8em;
+}
+
+.animated-gif{
+  width: 35em;
+  height: auto;
 }
 
 .content_txt {
@@ -562,19 +447,51 @@ body {
 
 /*------------------------------------------------------------ page 3 */
 
-/*------------------------------------------------------------ sec2 */
 
-.content_txt {
+/*------------------------------------------------------------ sec4 */
+
+.content_txt_right {
     font-size: medium;
+    text-align: right;
+    font-family: var(--taviraj)  /*----- ไม่มีใน Set Color เลยเติมออกมาก่อน -----*/
 }
 
 .arrow2 {
-    height: 7em;
+    height: 8em;
 }
 
-.img_over {
-    width: 100%;
-    height: auto;
+.right_dis {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.img_over2{
+  width: 35em;
+  height: auto;
+}
+
+.mar_5vh {
+    margin-top: 5vw;
+}
+
+/*------------------------------------------------------------ page 3 */
+
+
+/*------------------------------------------------------------ sec2 */
+
+.content_txt_right {
+    font-size: medium;
+    text-align: right;
+    font-family: var(--taviraj)  /*----- ไม่มีใน Set Color เลยเติมออกมาก่อน -----*/
+}
+
+.arrow2 {
+    height: 8em;
+}
+
+.img_over{
+  width: 45em;
+  height: auto;
 }
 
 .right_dis {
@@ -588,133 +505,45 @@ body {
 
 /*------------------------------------------------------------ page 3 */
 
-/*------------------------------------------------------------ sec3 */
 
-.arrow2 {
-    height: 7em;
+/*------------------------------------------------------------ Responsive */
+
+@media screen and (max-width:800px){
+    .animated-gif, .img_over2, .img_over{
+        width: 100%;
+        max-width: 600px;
+        height: auto;
+    }
+    .arrow2{
+        height: 6em;
+        width: auto;
+        float: bottom;
+    }
+
+    .content_txt_right, .content_txt, .topic_P3_Sec1{
+        width:100%;
+        text-align: left;
+        padding-right: 1cm;
+        margin-left: 20%;
+    }
+
+    .swap, .row{
+        display: table;
+    }
+
+    .a{
+        display: table-footer-group;
+    }
+
+    .b{
+        display: table-header-group;
+    }
+
+    .c{
+        display: table-footer-group;
+    }
+    
 }
-
-.animated-gif {
-    width: 100%;
-    height: auto;
-}
-
-.content_txt {
-    font-size: medium;
-}
-
-/*------------------------------------------------------------ page 3 */
-
-/*------------------------------------------------------------ sec5 */
-
-.topic_p3_sec4 {
-    font-size: medium;
-    text-align: right;
-    color: var(--ci1);
-    padding-right: 1cm;
-}
-
-.sec4 {
-    /**width: 1100px;**/
-    width: 100%;
-    height: auto;
-    margin-bottom: -9vw;
-    margin-left: 0vw;
-}
-
-/*------------------------------------------------------------ page 3 */
-
-/*------------------------------------------------------------ sec5 */
-
-.topic_p3_sec5 {
-    font-size: medium;
-    text-align: right;
-    color: var(--ci1);
-    padding-right: 1cm;
-}
-
-.sec5 {
-    /**width: 1100px;**/
-    width: 100%;
-    height: auto;
-    margin-bottom: -9vw;
-    margin-left: 0vw;
-}
-
-/*------------------------------------------------------------ page 3 */
-
-/*------------------------------------------------------------ sec6 */
-
-.topic_p3_sec6 {
-    font-size: medium;
-    text-align: right;
-    color: var(--ci1);
-    padding-right: 1cm;
-}
-
-.sec6 {
-    /**width: 800px;**/
-    width: 100%;
-    height: auto;
-    margin-bottom: -7vw;
-    margin-top: -1vw;
-}
-
-/*------------------------------------------------------------ page 3 */
-
-/*------------------------------------------------------------ sec7 */
-
-.topic_p3_sec7 {
-    font-size: medium;
-    text-align: right;
-    color: var(--ci1);
-    padding-right: 1cm;
-}
-
-.sec7 {
-    /**width: 800px;**/
-    width: 100%;
-    height: auto;
-    padding-left: 1cm;
-    margin-top: 2vw;
-    margin-bottom: -5vw;
-}
-
-/*------------------------------------------------------------ page 3 */
-
-/*------------------------------------------------------------ sec8 */
-
-.topic_p3_sec8 {
-    font-size: medium;
-    text-align: right;
-    color: var(--ci1);
-    padding-right: 1cm;
-}
-
-.sec8 {
-    /**width: 1300px;**/
-    width: 100%;
-    height: auto;
-    margin-bottom: -15vw;
-    position: relative;
-}
-
-.P3Button {
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 40vw;
-    width: 100%;
-    padding: 10vh 0 10vh 0;
-    background-image: url('asset/page3/page3_img8.png');
-}
-
-/**
-.P3Button {
-    margin-bottom: 45vh;
-    position: relative;
-    z-index: 1;
-}
-**/
 
 /*------------------------------------------------------------ Footer */
 
@@ -727,8 +556,113 @@ body {
     text-align: center;
 }
 
-.my_footer p {
+.my_footer p{
     font-size: small;
     margin: 0;
     font-family: var(--taviraj);
 }
+
+
+/*-----------------fluke--edit-------------------*/
+.fluke{
+    display:grid ;
+
+}
+
+.flukesm1{
+    grid-column:2 / span 2;
+    grid-row: 2/ span 2;
+
+}
+
+.flukesm2{
+    grid-column:3 / span 2;
+    grid-row: 1 / span 2;
+    
+}
+
+.flukesm3{
+    position: relative;
+    grid-column:3 / span 2;
+    grid-row: 1 / span 2;
+    top: 31vw;
+    left: -55vw;
+    text-align: right;
+
+}
+
+.flukeimg1{
+    position: relative;
+    width: 40vw;
+    top: 10vw;
+    left: 10vw;
+
+}
+
+.flukeimg2{
+    position: relative;
+    width: 40vw;
+    right: 0vw;
+    top: 15vw;
+    
+
+}
+.flukeimg3{
+    position: relative;
+    width: 70vw;
+    left: 6vw;
+    top: 18vw;
+
+
+}
+
+.flukearrow{
+    position: relative;
+    bottom: 19vw;
+    width: 2vw;
+    left: -2vw;
+}
+
+
+h4{
+    font-size: 1vw;
+}
+
+.fluktext1{
+    padding-top: 1vw;
+    position: relative;
+    text-align: right;
+    right: 4vw;
+    top: 7vw;
+
+    
+}
+
+.fluktext2 h1{
+
+    position: relative;
+    margin-bottom: 0;
+    color: var(--ci1);
+    font-family: var(--kanit);
+    text-align: right ;
+    font-weight: bold;
+    right: 4vw;
+    top: 7vw;
+    
+}
+
+.fluktextt
+{
+    color: var(--ci1);
+    -webkit-text-fill-color: white; 
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color:var(--ci1);
+    margin-bottom: 0;
+
+    text-align: right;
+    font-family: var(--kanit);
+}
+
+/*-----------------fluke-edit------------------*/
+
+
