@@ -546,6 +546,27 @@ body {
 /*------------------------------------------------------------ page 3 */
 
 
+/*------------------------------------------------------------ sec4 */
+
+.topic_p3_sec4{
+    font-size: medium;
+    text-align: right;
+    color: var(--ci1);
+    padding-right: 1cm;
+}
+
+.sec4{
+    /**width: 1100px;**/
+    width:100%;
+    height: auto;
+    margin-bottom: -9vw;
+    margin-left: 0vw;
+}
+
+
+/*------------------------------------------------------------ page 3 */
+
+
 /*------------------------------------------------------------ sec5 */
 
 .topic_p3_sec5{
@@ -556,11 +577,11 @@ body {
 }
 
 .sec5{
-    /**width: 1100px;**/
+    /**width: 800px;**/
     width:100%;
     height: auto;
-    margin-bottom: -9vw;
-    margin-left: 0vw;
+    margin-bottom: -7vw;
+    margin-top: -1vw;
 }
 
 
@@ -580,8 +601,9 @@ body {
     /**width: 800px;**/
     width:100%;
     height: auto;
-    margin-bottom: -7vw;
-    margin-top: -1vw;
+    padding-left: 1cm;
+    margin-top: 2vw;
+    margin-bottom: -5vw;
 }
 
 
@@ -598,28 +620,6 @@ body {
 }
 
 .sec7{
-    /**width: 800px;**/
-    width:100%;
-    height: auto;
-    padding-left: 1cm;
-    margin-top: 2vw;
-    margin-bottom: -5vw;
-}
-
-
-/*------------------------------------------------------------ page 3 */
-
-
-/*------------------------------------------------------------ sec8 */
-
-.topic_p3_sec8{
-    font-size: medium;
-    text-align: right;
-    color: var(--ci1);
-    padding-right: 1cm;
-}
-
-.sec8{
     /**width: 1300px;**/
     width:100%;
     height: auto;
