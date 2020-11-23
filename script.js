@@ -35,7 +35,7 @@ window.onload = function () {
     window.addEventListener('scroll', scrollEffect);
 
     function scrollEffect() {
-        if (window.scrollY >= 700) {
+        if (window.scrollY >= 500) {
             // Right
             fadeRight.style.opacity = "1";
             fadeRight.style.transform = 'translateX(0px)';
@@ -60,6 +60,7 @@ window.onload = function () {
 
 }
 
+//-----------------------------------------------------------------------Parallax Scrolling Page1
 
 // l,d,x
 function castParallax() {
