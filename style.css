@@ -534,6 +534,78 @@ body {
 /*------------------------------------------------------------ page 3 */
 
 
+/*------------------------------------------------------------ sec2 */
+
+.content_txt {
+    font-size: medium;
+}
+
+.arrow2 {
+    height: 7em;
+}
+
+.img_over{
+  width: 100%;
+  height: auto;
+}
+
+.right_dis {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.mt_1vh {
+    margin-top: 1vw;
+}
+
+/*------------------------------------------------------------ page 3 */
+
+
+/*------------------------------------------------------------ sec3 */
+
+.arrow2 {
+    height: 7em;
+}
+
+.animated-gif{
+  width: 100%;
+  height: auto;
+}
+
+.content_txt {
+    font-size: medium;
+}
+
+/*------------------------------------------------------------ page 3 */
+
+
+/*------------------------------------------------------------ sec4 */
+
+.content_txt {
+    font-size: medium;
+}
+
+.arrow2 {
+    height: 7em;
+}
+
+.right_dis {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.img_over2{
+  width: 100%;
+  height: auto;
+}
+
+.mar_5vh {
+    margin-top: 5vw;
+}
+
+/*------------------------------------------------------------ page 3 */
+
+
 /*------------------------------------------------------------ sec5 */
 
 .topic_p3_sec5{
@@ -628,82 +700,6 @@ img.sec8{
 
 .mar_5vh {
     margin-top: 5vw;
-}
-
-/*------------------------------------------------------------ page 3 */
-
-
-/*------------------------------------------------------------ sec3 */
-
-.arrow2 {
-    height: 8em;
-}
-
-.animated-gif{
-  width: 35em;
-  height: auto;
-}
-
-.content_txt {
-    font-size: medium;
-}
-
-/*------------------------------------------------------------ page 3 */
-
-
-/*------------------------------------------------------------ sec4 */
-
-.content_txt_right {
-    font-size: medium;
-    text-align: right;
-    font-family: var(--taviraj)  /*----- ไม่มีใน Set Color เลยเติมออกมาก่อน -----*/
-}
-
-.arrow2 {
-    height: 8em;
-}
-
-.right_dis {
-    display: flex;
-    flex-direction: row-reverse;
-}
-
-.img_over2{
-  width: 35em;
-  height: auto;
-}
-
-.mar_5vh {
-    margin-top: 5vw;
-}
-
-/*------------------------------------------------------------ page 3 */
-
-
-/*------------------------------------------------------------ sec2 */
-
-.content_txt_right {
-    font-size: medium;
-    text-align: right;
-    font-family: var(--taviraj)  /*----- ไม่มีใน Set Color เลยเติมออกมาก่อน -----*/
-}
-
-.arrow2 {
-    height: 8em;
-}
-
-.img_over{
-  width: 45em;
-  height: auto;
-}
-
-.right_dis {
-    display: flex;
-    flex-direction: row-reverse;
-}
-
-.mt_1vh {
-    margin-top: 1vw;
 }
 
 /*------------------------------------------------------------ Footer */
