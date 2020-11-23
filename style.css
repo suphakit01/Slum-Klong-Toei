@@ -706,48 +706,6 @@ img.sec8{
     margin-top: 1vw;
 }
 
-/*------------------------------------------------------------ page 3 */
-
-
-/*------------------------------------------------------------ Responsive */
-
-@media screen and (max-width:800px){
-    .animated-gif, .img_over2, .img_over{
-        width: 100%;
-        max-width: 600px;
-        height: auto;
-    }
-    .arrow2{
-        height: 6em;
-        width: auto;
-        float: bottom;
-    }
-
-    .content_txt_right, .content_txt, .topic_P3_Sec1{
-        width:100%;
-        text-align: left;
-        padding-right: 1cm;
-        margin-left: 20%;
-    }
-
-    .swap, .row{
-        display: table;
-    }
-
-    .a{
-        display: table-footer-group;
-    }
-
-    .b{
-        display: table-header-group;
-    }
-
-    .c{
-        display: table-footer-group;
-    }
-    
-}
-
 /*------------------------------------------------------------ Footer */
 
 .my_footer {
