@@ -556,18 +556,16 @@ body {
 
 /*------------------------------------------------------------ sec2 */
 
-.content_txt_right {
+.content_txt {
     font-size: medium;
-    text-align: right;
-    font-family: var(--taviraj)/*----- ไม่มีใน Set Color เลยเติมออกมาก่อน -----*/
 }
 
 .arrow2 {
-    height: 8em;
+    height: 7em;
 }
 
 .img_over {
-    width: 45em;
+    width: 100%;
     height: auto;
 }
 
@@ -585,11 +583,11 @@ body {
 /*------------------------------------------------------------ sec3 */
 
 .arrow2 {
-    height: 8em;
+    height: 7em;
 }
 
 .animated-gif {
-    width: 35em;
+    width: 100%;
     height: auto;
 }
 
