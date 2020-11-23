@@ -1,6 +1,27 @@
 body {
-    overflow-x: hidden;
+    overflow-x: hidden !important;
     background-color: var(--ci3);
+}
+
+/*------------------------------------------------------------ Root / Components */
+
+:root {
+    --ci1: #6B8CC9 !important;
+    --ci2: #000000 !important;
+    --ci3: #dee1ea !important;
+    --ci4: #c3c8da !important;
+    --kanit: 'Kanit', sans-serif !important;
+    --taviraj: 'Taviraj', serif !important
+}
+
+.vl {
+    border-left: .35em solid var(--ci1);
+    height: 10vw;
+}
+
+.hl {
+    border-top: .25em solid var(--ci1);
+    width: 3em;
 }
 
 .center_dis {
@@ -23,25 +44,13 @@ body {
     margin-top: 12vw;
 }
 
-/*------------------------------------------------------------ Root */
-
-:root {
-    --ci1: #6B8CC9 !important;
-    --ci2: #000000 !important;
-    --ci3: #dee1ea !important;
-    --ci4: #c3c8da !important;
-    --kanit: 'Kanit', sans-serif !important;
-    --taviraj: 'Taviraj', serif !important
+.mt_20vh {
+    margin-top: 20vw;
 }
 
-.vl {
-    border-left: .35em solid var(--ci1);
-    height: 10em;
-}
-
-.hl {
-    border-top: .25em solid var(--ci1);
-    width: 3em;
+.contentToBt {
+    position: absolute;
+    bottom: 0;
 }
 
 /*------------------------------------------------------------ Set Color */
@@ -55,7 +64,7 @@ body {
     font-family: var(--taviraj);
 }
 
-/*------------------------------------------------------------ fonts size */
+/*------------------------------------------------------------ set fonts */
 
 .font_Header {
     font-family: var(--taviraj);
@@ -173,11 +182,35 @@ button:focus {
 
 /*------------------------------------------------------------ Cover */
 
-.zoom {
+.keyart .keyart_layer {
+  height: auto;
+}
+
+#parallax {
+  display: block;
+}
+
+.keyart {
+  position: relative;
+  z-index: 10;
+}
+
+.keyart_layer {
+  width: 100%;
+  position: absolute;
+}
+.keyart_layer.parallax {
+  position: fixed;
+}
+
+/* last parallax */
+
+/* .zoom {
     width: 100%;
     height: 1000px;
     position: relative;
     overflow: hidden;
+
 }
 
 .zoom::before {
@@ -225,12 +258,9 @@ button:focus {
     transform: translateX(-50%);
     z-index: 95;
     right: 0;
-}
+} */
 
-.contentToBt {
-    position: absolute;
-    bottom: 0;
-}
+
 
 /*------------------------------------------------------------ page1 */
 
@@ -364,7 +394,6 @@ body {
 }
 
 .timeline .event {
-    border-bottom: 1px dashed #e8ebf1;
     padding-bottom: 40px;
     margin-bottom: 40px;
     position: relative;
@@ -514,33 +543,20 @@ body {
     position: relative;
     right: 5%;
 }
-
 /*------------------------------------------------------------ page 3 */
 
 
 /*------------------------------------------------------------ sec1 */
 
-.content_txt_right {
-    font-size: medium;
-    text-align: right;
+
+.topic_P3_Sec1{
+    margin-bottom: 0;
+    color: var(--ci1);
+    font-family: var(--kanit);
 }
 
 .content_txt {
     font-size: medium;
-}
-
-.arrow2 {
-    height: 7em;
-}
-
-.animated-gif{
-  width: 40em;
-  height: auto;
-}
-
-.right_dis {
-    display: flex;
-    flex-direction: row-reverse;
 }
 
 /*------------------------------------------------------------ page 3 */
@@ -624,15 +640,155 @@ img.sec8{
     margin-bottom: -17vw;
 }
 
+.arrow2 {
+    height: 12em;
+}
+
+.img_over{
+  width: 45em;
+  height: auto;
+}
+
+.right_dis {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.mar_5vh {
+    margin-top: 5vw;
+}
+
+/*------------------------------------------------------------ page 3 */
+
+
+/*------------------------------------------------------------ sec3 */
+
+.arrow2 {
+    height: 8em;
+}
+
+.animated-gif{
+  width: 35em;
+  height: auto;
+}
+
+.content_txt {
+    font-size: medium;
+}
+
+/*------------------------------------------------------------ page 3 */
+
+
+/*------------------------------------------------------------ sec4 */
+
+.content_txt_right {
+    font-size: medium;
+    text-align: right;
+    font-family: var(--taviraj)  /*----- ไม่มีใน Set Color เลยเติมออกมาก่อน -----*/
+}
+
+.arrow2 {
+    height: 8em;
+}
+
+.right_dis {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.img_over2{
+  width: 35em;
+  height: auto;
+}
+
+.mar_5vh {
+    margin-top: 5vw;
+}
+
+/*------------------------------------------------------------ page 3 */
+
+
+/*------------------------------------------------------------ sec2 */
+
+.content_txt_right {
+    font-size: medium;
+    text-align: right;
+    font-family: var(--taviraj)  /*----- ไม่มีใน Set Color เลยเติมออกมาก่อน -----*/
+}
+
+.arrow2 {
+    height: 8em;
+}
+
+.img_over{
+  width: 45em;
+  height: auto;
+}
+
+.right_dis {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.mt_1vh {
+    margin-top: 1vw;
+}
+
+/*------------------------------------------------------------ page 3 */
+
+
+/*------------------------------------------------------------ Responsive */
+
+@media screen and (max-width:800px){
+    .animated-gif, .img_over2, .img_over{
+        width: 100%;
+        max-width: 600px;
+        height: auto;
+    }
+    .arrow2{
+        height: 6em;
+        width: auto;
+        float: bottom;
+    }
+
+    .content_txt_right, .content_txt, .topic_P3_Sec1{
+        width:100%;
+        text-align: left;
+        padding-right: 1cm;
+        margin-left: 20%;
+    }
+
+    .swap, .row{
+        display: table;
+    }
+
+    .a{
+        display: table-footer-group;
+    }
+
+    .b{
+        display: table-header-group;
+    }
+
+    .c{
+        display: table-footer-group;
+    }
+    
+}
+
 /*------------------------------------------------------------ Footer */
 
 .my_footer {
-    /* margin-top: 10vw; */
     background: var(--ci1) !important;
     color: white;
-    padding: 2em 2em 1em 2em;
+    padding: 2.5em 0em 2.5em 0em;
     width: 100%;
     overflow: hidden;
     text-align: center;
-    font-family: var(--kanit);
+}
+
+.my_footer p{
+    font-size: small;
+    margin: 0;
+    font-family: var(--taviraj);
 }
