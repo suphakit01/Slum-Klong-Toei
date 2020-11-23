@@ -147,7 +147,7 @@ button:focus {
 /*------------------------------------------------------------ NavBar */
 
 .mynavbar_brand {
-    width: 2.5em;
+    width: 2em;
 }
 
 .my_navBg {
@@ -164,6 +164,14 @@ button:focus {
 
 .navbar {
     padding-bottom: 0;
+}
+
+.navbar-nav a:hover {
+    border-bottom: 3px solid var(--ci1);
+}
+
+.navbar-nav a.active {
+    border-bottom: 3px solid var(--ci1);
 }
 
 /* Apply style after scroll */
