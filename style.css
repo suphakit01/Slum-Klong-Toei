@@ -183,24 +183,25 @@ button:focus {
 /*------------------------------------------------------------ Cover */
 
 .keyart .keyart_layer {
-  height: auto;
+    height: auto;
 }
 
 #parallax {
-  display: block;
+    display: block;
 }
 
 .keyart {
-  position: relative;
-  z-index: 10;
+    position: relative;
+    z-index: 10;
 }
 
 .keyart_layer {
-  width: 100%;
-  position: absolute;
+    width: 100%;
+    position: absolute;
 }
+
 .keyart_layer.parallax {
-  position: fixed;
+    position: fixed;
 }
 
 /* last parallax */
@@ -259,8 +260,6 @@ button:focus {
     z-index: 95;
     right: 0;
 } */
-
-
 
 /*------------------------------------------------------------ page1 */
 
@@ -334,7 +333,7 @@ button:focus {
     font-family: var(--kanit);
 }
 
-.contentSec5{
+.contentSec5 {
     margin-top: 20vw;
     position: absolute;
 }
@@ -343,7 +342,7 @@ button:focus {
     font-size: medium;
 }
 
-.sec5xButton{
+.sec5xButton {
     background-repeat: no-repeat;
     background-size: cover;
     height: 40vw;
@@ -473,83 +472,77 @@ body {
 
 /*----------------------------fluke-------------------------------- page 2 */
 
-
 /*-------------------------------fluke----------------------------- sec3 */
 
-.mar_13vh{
+.mar_13vh {
     margin-top: 0vw;
 }
-.mar_14vh{
+
+.mar_14vh {
     margin-top: 10vw;
 }
 
-.fluketext1 h1{
+.fluketext1 h1 {
     margin-bottom: 0;
     color: var(--ci1);
     font-family: var(--kanit);
-    text-align: right ;
+    text-align: right;
     font-weight: bold;
-
 }
 
-.fluketext2 h1{
+.fluketext2 h1 {
     color: var(--ci1);
-    -webkit-text-fill-color: white; 
+    -webkit-text-fill-color: white;
     -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color:var(--ci1);
+    -webkit-text-stroke-color: var(--ci1);
     margin-bottom: 0;
-
     text-align: right;
     font-family: var(--kanit);
 }
 
-.fluketext3{
+.fluketext3 {
     font-family: var(--taviraj);
     text-align: right;
 }
 
-.flukeimg1{
+.flukeimg1 {
     position: relative;
     top: 50%;
-    
 }
 
 /*----------------------------fluke-------------------------------- page 2 */
 
-
 /*-------------------------------fluke----------------------------- sec4 */
 
-.fluketext4{
+.fluketext4 {
     position: relative;
     top: 44%;
     text-align: right;
 }
 
-.flukearrow{
+.flukearrow {
     position: relative;
-    left :45%;
-    top : 900%;
-    
+    left: 45%;
+    top: 900%;
 }
 
-.flukearrowna{
+.flukearrowna {
     display: flex;
     flex-direction: column;
     align-items: right;
     height: 1em;
 }
 
-.flukeimg2{
+.flukeimg2 {
     position: relative;
     right: 5%;
 }
-/*------------------------------------------------------------ page 3 */
 
+/*------------------------------------------------------------ page 3 */
 
 /*------------------------------------------------------------ sec1 */
 
-
-.topic_P3_Sec1{
+.topic_P3_Sec1 {
     margin-bottom: 0;
     color: var(--ci1);
     font-family: var(--kanit);
@@ -561,168 +554,21 @@ body {
 
 /*------------------------------------------------------------ page 3 */
 
-
-/*------------------------------------------------------------ sec5 */
-
-.topic_p3_sec5{
-    font-size: medium;
-    text-align: right;
-    color: var(--ci1);
-    padding-right: 1cm;
-}
-
-img.sec5{
-    width: 1100px;
-    height: auto;
-    margin-bottom: -9vw;
-    margin-left: -10vw;
-}
-
-
-/*------------------------------------------------------------ page 3 */
-
-
-/*------------------------------------------------------------ sec6 */
-
-.topic_p3_sec6{
-    font-size: medium;
-    text-align: right;
-    color: var(--ci1);
-    padding-right: 1cm;
-}
-
-img.sec6{
-    width: 800px;
-    height: auto;
-    margin-bottom: -7vw;
-    margin-top: -1vw;
-}
-
-
-/*------------------------------------------------------------ page 3 */
-
-
-/*------------------------------------------------------------ sec7 */
-
-.topic_p3_sec7{
-    font-size: medium;
-    text-align: right;
-    color: var(--ci1);
-    padding-right: 1cm;
-}
-
-img.sec7{
-    width: 800px;
-    height: auto;
-    padding-left: 1cm;
-    margin-top: 2vw;
-    margin-bottom: -5vw;
-}
-
-
-/*------------------------------------------------------------ page 3 */
-
-
-/*------------------------------------------------------------ sec8 */
-
-.topic_p3_sec8{
-    font-size: medium;
-    text-align: right;
-    color: var(--ci1);
-    padding-right: 1cm;
-}
-
-img.sec8{
-    width: 900px;
-    height: auto;
-    padding-left: 2cm;
-    margin-top: -2vw;
-    margin-bottom: -17vw;
-}
-
-.arrow2 {
-    height: 12em;
-}
-
-.img_over{
-  width: 45em;
-  height: auto;
-}
-
-.right_dis {
-    display: flex;
-    flex-direction: row-reverse;
-}
-
-.mar_5vh {
-    margin-top: 5vw;
-}
-
-/*------------------------------------------------------------ page 3 */
-
-
-/*------------------------------------------------------------ sec3 */
-
-.arrow2 {
-    height: 8em;
-}
-
-.animated-gif{
-  width: 35em;
-  height: auto;
-}
-
-.content_txt {
-    font-size: medium;
-}
-
-/*------------------------------------------------------------ page 3 */
-
-
-/*------------------------------------------------------------ sec4 */
-
-.content_txt_right {
-    font-size: medium;
-    text-align: right;
-    font-family: var(--taviraj)  /*----- ไม่มีใน Set Color เลยเติมออกมาก่อน -----*/
-}
-
-.arrow2 {
-    height: 8em;
-}
-
-.right_dis {
-    display: flex;
-    flex-direction: row-reverse;
-}
-
-.img_over2{
-  width: 35em;
-  height: auto;
-}
-
-.mar_5vh {
-    margin-top: 5vw;
-}
-
-/*------------------------------------------------------------ page 3 */
-
-
 /*------------------------------------------------------------ sec2 */
 
 .content_txt_right {
     font-size: medium;
     text-align: right;
-    font-family: var(--taviraj)  /*----- ไม่มีใน Set Color เลยเติมออกมาก่อน -----*/
+    font-family: var(--taviraj)/*----- ไม่มีใน Set Color เลยเติมออกมาก่อน -----*/
 }
 
 .arrow2 {
     height: 8em;
 }
 
-.img_over{
-  width: 45em;
-  height: auto;
+.img_over {
+    width: 45em;
+    height: auto;
 }
 
 .right_dis {
@@ -736,44 +582,102 @@ img.sec8{
 
 /*------------------------------------------------------------ page 3 */
 
+/*------------------------------------------------------------ sec3 */
 
-/*------------------------------------------------------------ Responsive */
+.arrow2 {
+    height: 8em;
+}
 
-@media screen and (max-width:800px){
-    .animated-gif, .img_over2, .img_over{
-        width: 100%;
-        max-width: 600px;
-        height: auto;
-    }
-    .arrow2{
-        height: 6em;
-        width: auto;
-        float: bottom;
-    }
+.animated-gif {
+    width: 35em;
+    height: auto;
+}
 
-    .content_txt_right, .content_txt, .topic_P3_Sec1{
-        width:100%;
-        text-align: left;
-        padding-right: 1cm;
-        margin-left: 20%;
-    }
+.content_txt {
+    font-size: medium;
+}
 
-    .swap, .row{
-        display: table;
-    }
+/*------------------------------------------------------------ page 3 */
 
-    .a{
-        display: table-footer-group;
-    }
+/*------------------------------------------------------------ sec5 */
 
-    .b{
-        display: table-header-group;
-    }
+.topic_p3_sec5 {
+    font-size: medium;
+    text-align: right;
+    color: var(--ci1);
+    padding-right: 1cm;
+}
 
-    .c{
-        display: table-footer-group;
-    }
-    
+.sec5 {
+    /**width: 1100px;**/
+    width: 100%;
+    height: auto;
+    margin-bottom: -9vw;
+    margin-left: 0vw;
+}
+
+/*------------------------------------------------------------ page 3 */
+
+/*------------------------------------------------------------ sec6 */
+
+.topic_p3_sec6 {
+    font-size: medium;
+    text-align: right;
+    color: var(--ci1);
+    padding-right: 1cm;
+}
+
+.sec6 {
+    /**width: 800px;**/
+    width: 100%;
+    height: auto;
+    margin-bottom: -7vw;
+    margin-top: -1vw;
+}
+
+/*------------------------------------------------------------ page 3 */
+
+/*------------------------------------------------------------ sec7 */
+
+.topic_p3_sec7 {
+    font-size: medium;
+    text-align: right;
+    color: var(--ci1);
+    padding-right: 1cm;
+}
+
+.sec7 {
+    /**width: 800px;**/
+    width: 100%;
+    height: auto;
+    padding-left: 1cm;
+    margin-top: 2vw;
+    margin-bottom: -5vw;
+}
+
+/*------------------------------------------------------------ page 3 */
+
+/*------------------------------------------------------------ sec8 */
+
+.topic_p3_sec8 {
+    font-size: medium;
+    text-align: right;
+    color: var(--ci1);
+    padding-right: 1cm;
+}
+
+.sec8 {
+    /**width: 1300px;**/
+    width: 100%;
+    height: auto;
+    margin-bottom: -22vw;
+    position: relative;
+}
+
+.P3Button {
+    margin-bottom: 45vh;
+    position: relative;
+    z-index: 1;
 }
 
 /*------------------------------------------------------------ Footer */
@@ -787,7 +691,7 @@ img.sec8{
     text-align: center;
 }
 
-.my_footer p{
+.my_footer p {
     font-size: small;
     margin: 0;
     font-family: var(--taviraj);
