@@ -631,36 +631,6 @@ body {
     z-index: 1;
 }
 
-/*------------------------------------------------------------ page 3 */
-
-
-/*------------------------------------------------------------ Responsive */
-
-
-@media screen and (max-width:800px){
-    .topic_p3_sec5, .topic_p3_sec6, .topic_p3_sec7, .topic_p3_sec8{
-        width:100%;
-        text-align: right;
-    }
-    .content_txt, .pb-4 {
-        width:100%;
-        text-align: right;
-        padding-right: 1cm;
-    }
-    .sec5{
-        margin-left: 0vw;
-    }
-
-    .sec8{
-        margin-left: -1vw;
-    }
-}
-
-.P3responsive{
-    width: 100%;
-    max-width: 600px;
-    height: auto;
-}
 
 /*------------------------------------------------------------ Footer */
 
