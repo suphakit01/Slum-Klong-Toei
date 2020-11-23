@@ -35,26 +35,27 @@
 
 </head>
 
-<body style="background-image: url(asset/page2/page2_bg.png);">
+<body style="background: url(asset/page2/page2_bg.png) center/cover no-repeat;">
 
     <!------------------ Navbar ------------------>
 
     <header id="site-header">
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <div class="container my_navBg">
+        <nav class="navbar navbar-expand-lg navbar-light" id="navbarParent">
+            <div class="container my_navBg" id="navbarChild">
 
                 <a href="index.html" class="navbar-brand"><img class="mynavbar_brand" src="asset/logo.svg"></a>
 
                 <!-- Hamburger -->
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
                 <!-- Right Content -->
-                <div class="collapse navbar-collapse collapse w-100 order-3 dual-collapse2" id="navbarNavAltMarkup">
+                <div class="collapse navbar-collapse collapse w-100 order-3 dual-collapse2" id="navbarSupportedContent">
                     <div class="navbar-nav ml-auto">
-                        <a class="nav-link blue_txt" href="page2.html">SLUM OF KHLONGTOEI</a>
+                        <a class="nav-link blue_txt active" href="page2.html">SLUM OF KHLONGTOEI</a>
                         <a class="nav-link blue_txt" href="page3.html">DEVELOPMENT</a>
                     </div>
                 </div>
@@ -68,7 +69,7 @@
     <div class="container">
 
         <!-- Contents Section #1 -->
-        <div class="mt_12vh">
+        <div class="mt_10vh">
             <div class="row">
                 <div class="col-md-2"></div>
                 <div class="col-md-6">
@@ -121,95 +122,78 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
 
 
-            <!-- Contents Section #2 -->
-            <section>
-                <div class="mt_12vh">
+    <!-- Contents Section #2 -->
+    <section class="container-fluid mt_10vh p-0">
+        <img class="w-100" src="asset/page2/page2_img2.gif" alt="">
+    </section>
 
-                    <div class="row">
-                        <div class="col-md-7"></div>
-                        <div class="col-md-12 img_sec5">
-                            <img class="w-100" src="asset/page2/page2_img2.gif" alt="">
-                        </div>
-                    </div>
+    <div class="container">
+        <!-- Contents Section #3 -->
+        <div class="container mt_10vh">
+            <div class="row">
+                <div class="col-md-8">
+                    <img src="asset/page2/page2_img3.png" alt="" class="w-100">
                 </div>
-            </section>
-
-            <!-- Contents Section #3 -->
-            <div class="mt_12vh">
-                <div class="row">
-                    <div class="col-md-7 p-5">
-                        <img class="w-100" src="asset/page2/page2_img3.png" alt="">
-                    </div>
-
-                    <div class="col-md-5">
-                        <div class="contentToBt pb-3 pad_r6vw">
-                            <div class="topicSec1">
-                                <h1>Smart</h1>
-                                <h1>community</h1>
-                                <h1>(กกท)</h1>
-                                <hr>
-                            </div>
-                            <div class="content_txt pb-4">
-                                <p>
-                                    โครงการ Smart community เป็นโครงการของ กกท.
-                                    ที่จะพัฒนาและบริหารพื้นที่โดยรอบเขตรั้วศุลกากร กทท. ให้เกิดประโยชน์สูงสุด
-                                    รวมทั้งพัฒนาคุณภาพของชุมชนและโครงการต่างๆของ กทท.
-                                </p>
-                            </div>
+                <div class="col-md-4">
+                    <div class=topic_p2s3>
+                        <h1>Smart<br>
+                            Community</h1>
+                        <div class="topic_p2s3_subtext">
+                            <h1>— (กกท)</h1>
                         </div>
+                    </div>
+                    <br>
+                    <div class="content_txt_p2s3">
+                        <h5>โครงการ Smart community <br>เป็นนโยบายของ กกท.
+                            ที่จะพัฒนาและบริหารพื้นที่โดยรอบเขตรั้วศุลกากรกทท. ให้เกิดประโยชน์สูงสุด
+                            รวมทั้งพัฒนาคุณภาพของชุมชนและโครงการต่าง ๆ ของ กทท.</h5>
                     </div>
                 </div>
             </div>
+        </div>
 
-            <!-- Contents Section #4 -->
-            <div class="mt_12vh">
-                <div class="row">
-                    <div class="col-md-1"></div>
-                    <div class="col-md-4 middle_vertically">
-                        <div class="contentToBt">
-                            <div class="topicSec2">
-
-                                <div class="center_dis">
-                                    <img class="arrow" src="asset/arrow.svg" alt="">
-                                </div>
-                            </div>
-                            <br><br>
-                            <div class="content_txt">
-                                <p>
-                                    ใช้พื้นที่บริเวณองค์กรการฟอกหนังจำนวน 58 ไร่
-                                    ก่อสร้างเป็นอาคารทรงสูงสำหรับรองรับชุมชนพื้นที่เขตคลองเตยเพื่อเป็นการยกระดับคุณภาพชีวิตความเป็นอยู่ของชุมชนให้ดีขึ้น
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-7">
-                        <br>
-                        <img class="w-100 mt-5" src="asset/page2/page2_img4.png" alt="">
+        <!-- Contents Section #4 -->
+        <div class="container mt_10vh">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="topic2Sec4">
+                        <h5>ใช้พื้นที่บริเวณองค์กรการฟอกหนัง<br>จำนวน 58
+                            ไร่ก่อสร้างเป็นอาคารทรงสูง<br>สำหรับรองรับชุมชนพื้นที่เขตคลองเตย<br>เพื่อเป็นการยกระดับคุณภาพชีวิต<br>ความเป็นอยู่ของชุมชนให้ดีขึ้น
+                        </h5>
+                        <div><img src="asset/arrow.svg" alt="" class="arrow_p2s4"></div>
                     </div>
                 </div>
+                <div class="col-md-8">
+                    <img src="asset/page2/page2_img4.png" alt="" class="w-100">
+                </div>
             </div>
+        </div>
 
-            <br><br><br><br><br>
-
-            <!-- button -->
-            <div class="text-center">
-                <a href="page3.html">
-                    <p class="myButton">ความเป็นมาของสลัมคลองเตย</p>
-                </a>
-            </div>
-            <br>
+        <!-- button on PC -->
+        <div class="P2Button center_dis text-center d-none d-sm-block">
+            <a href="page3.html">
+                <p class="myButton">ความเป็นมาของสลัมคลองเตย</p>
+            </a>
+        </div>
+        <!-- button on Mobile -->
+        <div class="P2Button_mobile center_dis text-center d-block d-sm-none">
+            <a href="page3.html">
+                <p class="myButton">ความเป็นมาของสลัมคลองเตย</p>
+            </a>
         </div>
     </div>
 
     <!------------------ Footer ------------------>
 
     <footer class="my_footer">
-        <p class="fz_300">เว็บไซต์นี้เป็นส่วนหนึ่งของวิชาออกแบบเว็บไซต์ หลักสูตรนิเทศศิลป์</p>
-        <p class="fz_300">คณะสถาปัตยกรรมศาสตร์และวิชาการโปรแกรมสื่อประสม</p>
-        <p class="fz_300">แขนงวิชาการพัฒนาสื่อประสมและเกม คณะเทคโนโลยีสารสนเทศ</p>
-        <p class="fz_300">สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง ©2020</p>
+        <p class="fz_300">เว็บไซต์นี้เป็นส่วนหนึ่งของวิชาออกแบบเว็บไซต์ หลักสูตรนิเทศศิลป์<br>
+            คณะสถาปัตยกรรมศาสตร์และวิชาการโปรแกรมสื่อประสม<br>
+            แขนงวิชาการพัฒนาสื่อประสมและเกม คณะเทคโนโลยีสารสนเทศ<br>
+            สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง ©2020</p>
     </footer>
 
     <!------------------ Link JS ------------------>

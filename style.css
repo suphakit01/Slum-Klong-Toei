@@ -20,7 +20,7 @@ body {
 }
 
 .hl {
-    border-top: .25em solid var(--ci1);
+    border-top: .15em solid var(--ci1);
     width: 3em;
 }
 
@@ -40,8 +40,8 @@ body {
     padding-right: 6vw !important;
 }
 
-.mt_12vh {
-    margin-top: 12vw;
+.mt_10vh {
+    margin-top: 10vw;
 }
 
 .mt_20vh {
@@ -123,7 +123,7 @@ body {
     margin: .25em .5em;
     cursor: pointer;
     font-family: var(--kanit);
-    border-radius: 100em;
+    border-radius: 1em;
     cursor: pointer;
     text-decoration: none !important;
     transition: 0.3s;
@@ -167,18 +167,19 @@ button:focus {
 }
 
 .navbar-nav a:hover {
-    border-bottom: 3px solid var(--ci1);
+    box-shadow: 0px 0.4em var(--ci1);
+
 }
 
 .navbar-nav a.active {
-    border-bottom: 3px solid var(--ci1);
+    box-shadow: 0px 0.4em var(--ci1);
 }
 
 /* Apply style after scroll */
 
 .scrolling-active {
     background-color: #dee1eae5;
-    box-shadow: 0 3px 1rem rgba(0, 0, 0, 0.1);
+    box-shadow: 0 3px 2rem rgba(0, 0, 0, 0.1);
 }
 
 .scrolling-active-t {
@@ -283,12 +284,22 @@ button:focus {
     font-size: medium;
 }
 
+.topicBox {
+    position:absolute;
+    background-color: rgba(255, 255, 255, 0.657);
+    padding: 2em;
+}
+
+.topicBox h1 {
+    color: var(--ci1);
+    font-size: 4em;
+}
+
 /*------------------------------------------------------------ page1 */
 
 /*------------------------------------------------------------ sec2 */
 
 .topicSec2 {
-    margin-bottom: 0;
     color: var(--ci1);
     font-family: var(--kanit);
 }
@@ -322,9 +333,9 @@ button:focus {
 /*------------------------------------------------------------ sec4 */
 
 .topicSec4 h1 {
-    margin-bottom: 0;
     color: var(--ci1);
     font-family: var(--kanit);
+    font-size: 2.5em;
 }
 
 .arrow {
@@ -335,7 +346,7 @@ button:focus {
 
 /*------------------------------------------------------------ sec5 */
 
-.topicSec5 h5 {
+.topicSec5 h2 {
     margin-bottom: 0;
     color: var(--ci1);
     font-family: var(--kanit);
@@ -362,10 +373,6 @@ button:focus {
 /*------------------------------------------------------------ page2 */
 
 /*------------------------------------------------------------ sec1 */
-
-body {
-    margin-top: auto;
-}
 
 .timeline {
     border-left: 3px solid var(--ci1);
@@ -478,72 +485,86 @@ body {
     right: -55.8px;
 }
 
-/*----------------------------fluke-------------------------------- page 2 */
 
-/*-------------------------------fluke----------------------------- sec3 */
+/*------------------------------------------------------------ page2 */
 
-.mar_13vh {
-    margin-top: 0vw;
+/*------------------------------------------------------------ sec2 */
+
+
+/*------------------------------------------------------------ page2 */
+
+/*------------------------------------------------------------ sec3 */
+
+.topic_p2s3{
+    font-family: var(--taviraj);
+    text-align: right;
+    padding-right: 0vw;
+    padding-top: 1vw;
 }
 
-.mar_14vh {
-    margin-top: 10vw;
-}
-
-.fluketext1 h1 {
+.topic_p2s3 h1{
+    position: relative;
     margin-bottom: 0;
     color: var(--ci1);
     font-family: var(--kanit);
-    text-align: right;
+    text-align: right ;
     font-weight: bold;
 }
 
-.fluketext2 h1 {
-    color: var(--ci1);
-    -webkit-text-fill-color: white;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: var(--ci1);
+.content_txt_p2s3{
+    text-align: right;
+    padding-right: 0vw;
+    padding-top: 1vw;
+
+}
+
+
+.topic_p2s3_subtext {
+    color: transparent;
+    -webkit-text-fill-color: transparent; 
+    -webkit-text-stroke-width: 1.75px;
+    -webkit-text-stroke-color:var(--ci1);
     margin-bottom: 0;
     text-align: right;
     font-family: var(--kanit);
 }
 
-.fluketext3 {
-    font-family: var(--taviraj);
+/*------------------------------------------------------------ page2 */
+
+/*------------------------------------------------------------ sec4 */
+
+.topic2Sec4{
+    position: relative;
+    right: 0vw;
+    top:16vw;
     text-align: right;
 }
 
-.flukeimg1 {
+.arrow_p2s4{
     position: relative;
-    top: 50%;
+    bottom: 22vw;
+    width: 2vw;
+    left: 0vw;
 }
 
-/*----------------------------fluke-------------------------------- page 2 */
-
-/*-------------------------------fluke----------------------------- sec4 */
-
-.fluketext4 {
-    position: relative;
-    top: 44%;
-    text-align: right;
+.P2Button {
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: -20vh;
+    margin-bottom: -2vw;
+    height: 60vh;
+    width: 100%;
+    padding: 30vh 0 5vh 0;
+    background-image: url('asset/page2/page2_img5.png');
 }
 
-.flukearrow {
-    position: relative;
-    left: 45%;
-    top: 900%;
-}
-
-.flukearrowna {
-    display: flex;
-    flex-direction: column;
-    align-items: right;
-    height: 1em;
-}
-
-.flukeimg2 {
-    position: relative;
-    right: 5%;
+.P2Button_mobile {
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: -12vh;
+    width: 100%;
+    padding: 20vh 0 20vh 0;
+    background-image: url('asset/page2/page2_img5.png');
 }
 
 /*------------------------------------------------------------ page 3 */
@@ -588,6 +609,30 @@ body {
 
 /*------------------------------------------------------------ page 3 */
 
+
+/*------------------------------------------------------------ sec2 */
+
+.content_txt_right {
+    font-size: medium;
+    text-align: right;
+    font-family: var(--taviraj)  /*----- ไม่มีใน Set Color เลยเติมออกมาก่อน -----*/
+}
+
+.arrow2 {
+    height: 8em;
+}
+
+.img_over{
+  width: 45em;
+  height: auto;
+}
+
+.right_dis {
+    display: flex;
+    flex-direction: row-reverse;
+}
+/*------------------------------------------------------------ page 3 */
+
 /*------------------------------------------------------------ sec3 */
 
 .arrow2 {
@@ -601,6 +646,50 @@ body {
 
 .content_txt {
     font-size: medium;
+}
+
+/*  */
+
+.arrow2 {
+    height: 8em;
+}
+
+.animated-gif{
+  width: 35em;
+  height: auto;
+}
+
+.content_txt {
+    font-size: medium;
+}
+
+
+/*------------------------------------------------------------ page 3 */
+
+/*------------------------------------------------------------ sec4 */
+
+.content_txt_right {
+    font-size: medium;
+    text-align: right;
+    font-family: var(--taviraj)  /*----- ไม่มีใน Set Color เลยเติมออกมาก่อน -----*/
+}
+
+.arrow2 {
+    height: 8em;
+}
+
+.right_dis {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.img_over2{
+  width: 35em;
+  height: auto;
+}
+
+.mar_5vh {
+    margin-top: 5vw;
 }
 
 /*------------------------------------------------------------ page 3 */
@@ -656,8 +745,6 @@ body {
     /**width: 800px;**/
     width: 100%;
     height: auto;
-    margin-bottom: -7vw;
-    margin-top: -1vw;
 }
 
 /*------------------------------------------------------------ page 3 */
@@ -675,9 +762,6 @@ body {
     /**width: 800px;**/
     width: 100%;
     height: auto;
-    padding-left: 1cm;
-    margin-top: 2vw;
-    margin-bottom: -5vw;
 }
 
 /*------------------------------------------------------------ page 3 */
@@ -692,7 +776,6 @@ body {
 }
 
 .sec8 {
-    /**width: 1300px;**/
     width: 100%;
     height: auto;
     margin-bottom: -15vw;
@@ -708,13 +791,6 @@ body {
     background-image: url('asset/page3/page3_img8.png');
 }
 
-/**
-.P3Button {
-    margin-bottom: 45vh;
-    position: relative;
-    z-index: 1;
-}
-**/
 
 /*------------------------------------------------------------ Footer */
 

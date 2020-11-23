@@ -16,17 +16,21 @@ window.onscroll = function () {
     }
 
     if (currentScrollPos < 50) {
+        document.querySelector('#navbarParent').classList.remove('my_navBg');
+        document.querySelector('#navbarChild').classList.add('my_navBg');
         header.classList.remove('scrolling-active');
         header.classList.add('scrolling-active-t');
     }
     if (currentScrollPos > 50) {
+        document.querySelector('#navbarParent').classList.add('my_navBg');
+        document.querySelector('#navbarChild').classList.remove('my_navBg');
         header.classList.add('scrolling-active');
         header.classList.remove('scrolling-active-t');
     }
     prevScrollpos = currentScrollPos;
 }
 
-//-----------------------------------------------------------------------Scrolling Fade-in / Fade-out
+//----------------------------------------------------------------------- Scrolling Fade-in / Fade-out
 
 window.onload = function () {
     const fadeRight = document.querySelector("#fadeRight");
@@ -35,7 +39,7 @@ window.onload = function () {
     window.addEventListener('scroll', scrollEffect);
 
     function scrollEffect() {
-        if (window.scrollY >= 500) {
+        if (window.scrollY >= 800) {
             // Right
             fadeRight.style.opacity = "1";
             fadeRight.style.transform = 'translateX(0px)';
