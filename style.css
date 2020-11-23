@@ -342,7 +342,7 @@ button:focus {
     font-size: medium;
 }
 
-.sec5xButton {
+.P1Button {
     background-repeat: no-repeat;
     background-size: cover;
     height: 40vw;
@@ -670,15 +670,26 @@ body {
     /**width: 1300px;**/
     width: 100%;
     height: auto;
-    margin-bottom: -22vw;
+    margin-bottom: -25vh;
     position: relative;
 }
 
+.P3Button {
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40vw;
+    width: 100%;
+    padding: 10vh 0 10vh 0;
+    background-image: url('asset/page3/page3_img8.png');
+}
+
+/**
 .P3Button {
     margin-bottom: 45vh;
     position: relative;
     z-index: 1;
 }
+**/
 
 /*------------------------------------------------------------ Footer */
 
