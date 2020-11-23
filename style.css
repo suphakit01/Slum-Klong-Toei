@@ -664,7 +664,8 @@ body {
     /**width: 1300px;**/
     width: 100%;
     height: auto;
-    margin-bottom: -15vw;
+    margin-top: -10vh;
+    margin-bottom: -45vh;
     position: relative;
 }
 
@@ -674,7 +675,10 @@ body {
     height: 40vw;
     width: 100%;
     padding: 10vh 0 10vh 0;
+    margin-bottom: -10vh;
     background-image: url('asset/page3/page3_img8.png');
+    position: relative;
+    z-index: 1;
 }
 
 /**
