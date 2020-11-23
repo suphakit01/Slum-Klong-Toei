@@ -211,9 +211,7 @@ button:focus {
     height: 1000px;
     position: relative;
     overflow: hidden;
-
 }
-
 .zoom::before {
     overflow: hidden;
     content: '';
@@ -224,7 +222,6 @@ button:focus {
     z-index: 99;
     background: linear-gradient(transparent, transparent);
 }
-
 .zoom #layer1 {
     position: absolute;
     left: 50%;
@@ -233,7 +230,6 @@ button:focus {
     z-index: 98;
     right: 0;
 }
-
 .zoom #layer2 {
     position: absolute;
     left: 50%;
@@ -242,7 +238,6 @@ button:focus {
     z-index: 97;
     right: 0;
 }
-
 .zoom #layer3 {
     position: absolute;
     left: 50%;
@@ -251,7 +246,6 @@ button:focus {
     z-index: 96;
     right: 0;
 }
-
 .zoom #layer4 {
     position: absolute;
     left: 50%;
@@ -342,7 +336,7 @@ button:focus {
     font-size: medium;
 }
 
-.sec5xButton {
+.P1Button {
     background-repeat: no-repeat;
     background-size: cover;
     height: 40vw;
@@ -670,15 +664,26 @@ body {
     /**width: 1300px;**/
     width: 100%;
     height: auto;
-    margin-bottom: -22vw;
+    margin-bottom: -15vw;
     position: relative;
 }
 
+.P3Button {
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40vw;
+    width: 100%;
+    padding: 10vh 0 10vh 0;
+    background-image: url('asset/page3/page3_img8.png');
+}
+
+/**
 .P3Button {
     margin-bottom: 45vh;
     position: relative;
     z-index: 1;
 }
+**/
 
 /*------------------------------------------------------------ Footer */
 
