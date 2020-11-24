@@ -4,6 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- add icon -->
+    <link rel="icon" href="asset/logo.svg" type="image/x-icon">
+
     <title>Slum Klong Toei</title>
 
     <!------------------ Google font ------------------>
@@ -29,29 +32,31 @@
 
     <!------------------ Link CSS ------------------>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="aos.css">
 
 </head>
 
-<body style="background-image: url(asset/page2/page2_bg.png);">
+<body style="background: url(asset/page2/page2_bg.png);">
 
     <!------------------ Navbar ------------------>
 
     <header id="site-header">
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <div class="container my_navBg">
+        <nav class="navbar navbar-expand-lg navbar-light" id="navbarParent">
+            <div class="container my_navBg" id="navbarChild">
 
                 <a href="index.html" class="navbar-brand"><img class="mynavbar_brand" src="asset/logo.svg"></a>
 
                 <!-- Hamburger -->
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
                 <!-- Right Content -->
-                <div class="collapse navbar-collapse collapse w-100 order-3 dual-collapse2" id="navbarNavAltMarkup">
+                <div class="collapse navbar-collapse collapse w-100 order-3 dual-collapse2" id="navbarSupportedContent">
                     <div class="navbar-nav ml-auto">
-                        <a class="nav-link blue_txt" href="page2.html">SLUM OF KHLONGTOEI</a>
+                        <a class="nav-link blue_txt active" href="page2.html">SLUM OF KHLONGTOEI</a>
                         <a class="nav-link blue_txt" href="page3.html">DEVELOPMENT</a>
                     </div>
                 </div>
@@ -65,13 +70,13 @@
     <div class="container">
 
         <!-- Contents Section #1 -->
-        <div class="mt_12vh">
+        <div class="mt_10vh" data-aos="fade-down">
             <div class="row">
-                <div class="col-md-2"></div>
+                <div class="col-md-3"></div>
                 <div class="col-md-6">
-                    <div class="topicSec2">
-                        <h1>'คลองเตย'</h1>
-                        <h1>ได้ยินคำนี้ หลายคนนึกถึง สลัม</h1>
+                    <div class="topic_p3s1">
+                        <h2>'คลองเตย'<br>
+                            ได้ยินคำนี้ หลายคนนึกถึง สลัม</h2>
                         <br>
                     </div>
                 </div>
@@ -82,131 +87,141 @@
                         <div id="content">
                             <ul class="timeline">
                                 <li class="topictimeline">
-                                    <p>"ภาพทางสังคมยังไม่โดนลบ สังคมยังมองคลองเตยเป็นชุมชุนที่มียาเสพติดแพร่กระจาย
+                                    <h5>"ภาพทางสังคมยังไม่โดนลบ สังคมยังมองคลองเตยเป็นชุมชุนที่มียาเสพติดแพร่กระจาย
                                         ปัญหาอาชญกรรม
                                         ปัญหาความรุนแรง สภาพการเป็นอยู่ที่แออัด คำว่า คลองเตย เป็นภาพจน์ที่ลบมาตลอด
                                         ซึ่งจริงๆทุกคนก็ช่วยกันแก้ไข
-                                        แต่ภาพพจน์เหล่านั้น มันถูกฝังในคนที่ไม่เคยสัมผัสคลองเตยจริงๆ <br>
-                                        นั่นคือเสียงสะท้อนจากคนในชุมชนซึ่งกำลังพูดอยู่กับปัจจุบัน"</p>
+                                        แต่ภาพพจน์เหล่านั้น มันถูกฝังในคนที่ไม่เคยสัมผัสคลองเตยจริงๆ <br><br>
+                                        นั่นคือเสียงสะท้อนจากคนในชุมชนซึ่งกำลังพูดอยู่กับปัจจุบัน"</h5>
                                 </li>
-                                <img class="w-100" src="asset/page2/page2_img1.gif" alt="">
-                                <li class="topictimeline">
-                                    <h3>แรงงานในคลองเตยมาจากไหนและเข้ามาเมื่อไหร่?</h3>
+                                <li>
+                                    <img class="mh-100" style="width: 800px; height: 500px;"
+                                        src="asset/page2/page2_img1.gif" alt="">
+                                </li>
+                                <br>
+                                <li class="topictimelineblue">
+                                    <h2>แรงงานในคลองเตย<br>
+                                        มาจากไหน<br>
+                                        และเข้ามาเมื่อไหร่?</h2>
+
+                                </li>
+                                <br>
+                                <hr style="background: rgb(179,179,179);border: 1.25px solid rgb(179, 179, 179);">
+                                <br>
+                                <li class="topictimelineblue">
                                 </li>
                                 <li class="topictimeline">
-                                    <p>จากข้อมูลใน ประวัติศาสตร์ชุมชนคลองเตยอาจะแบ่งได้เป็น 3 ช่วง</p>
+                                    <h5>จากข้อมูลใน ประวัติศาสตร์ชุมชนคลองเตย<br>อาจะแบ่งได้เป็น 3 ช่วง<h5>
                                 </li>
                                 <li class="event" data-date="พ.ศ. 2481-2490">
 
-                                    <p>ช่วงที่การท่าเรือแห่งประเทศไทยก่อสร้างท่าเรือกรุงเทพทำให้มีความต้องการแรงงานจำนวนมาก
-                                        จึงดึงแรงงานมาจากต่างจังหวัดและสร้างแคมป์ให้คนงานพัก </p>
+                                    <h5>ช่วงที่การท่าเรือแห่งประเทศไทยก่อสร้างท่าเรือกรุงเทพทำให้มีความต้องการแรงงานจำนวนมาก
+                                        จึงดึงแรงงานมาจากต่างจังหวัดและสร้างแคมป์ให้คนงานพัก</h5>
                                 </li>
                                 <li class="event" data-date="พ.ศ. 2503">
 
-                                    <p>สหรัฐอเมริกาตั้งฐานทัพในประเทศไทย เพื่อใช้เป็นฐานในการทำสงครามเวียดนาม
+                                    <h5>สหรัฐอเมริกาตั้งฐานทัพในประเทศไทย เพื่อใช้เป็นฐานในการทำสงครามเวียดนาม
                                         กองทัพสหรัฐจึงต้องการแรงงาน มาจัดตั้งและทำงานในฐานทัพ
                                         ตอนนั้นคนที่รู้ข่าวจึงพากันมาหางานทำเพราะเชื่อว่ากองทัพอเมริกันจะจ่ายค่าแรงไม่อั้น
-                                    </p>
+                                    </h5>
                                 </li>
-                                <li class="event" data-date="หลังพ.ศ.2503 เป็นต้นมา">
-
-                                    <p>คลองเตยกลายเป็นเป้าหมายของแรงงานต่างจังหวัดแม้การท่าเรือจะพยามแก้ปัญหาด้วยการรับ
-                                        บางส่วนเป็นพนังงานแต่แรงงานจากต่างจังหวัดก็ยังคงไหลมาที่นี่</p>
+                                <li class="event" data-date="หลัง พ.ศ.2503 เป็นต้นมา">
+                                    <h5>คลองเตยกลายเป็นเป้าหมายของแรงงานต่างจังหวัดแม้การท่าเรือจะพยามแก้ปัญหาด้วยการรับ
+                                        บางส่วนเป็นพนังงานแต่แรงงานจากต่างจังหวัดก็ยังคงไหลมาที่นี่<h5>
                                 </li>
                             </ul>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
+    </div>
 
 
-            <!-- Contents Section #2 -->
-            <section>
-                <div class="mt_12vh">
+    <!-- Contents Section #2 -->
+    <section class="container-fluid p-0" data-aos="fade-up">
+        <img class="w-100" src="asset/page2/page2_img2.gif" alt="">
+    </section>
 
-                    <div class="row">
-                        <div class="col-md-7"></div>
-                        <div class="col-md-12 img_sec5">
-                            <img class="w-100" src="asset/page2/page2_img2.gif" alt="">
-                        </div>
-                    </div>
+    <div class="container">
+        <!-- Contents Section #3 -->
+        <div class="container mt_10vh">
+            <div class="row" data-aos="zoom-out-up">
+                <div class="col-md-8">
+                    <img src="asset/page2/page2_img3.png" alt="" class="w-100">
                 </div>
-            </section>
-
-            <!-- Contents Section #3 -->
-            <div class="mt_12vh">
-                <div class="row">
-                    <div class="col-md-7 p-5">
-                        <img class="w-100" src="asset/page2/page2_img3.png" alt="">
-                    </div>
-
-                    <div class="col-md-5">
-                        <div class="contentToBt pb-3 pad_r6vw">
-                            <div class="topicSec1">
-                                <h1>Smart</h1>
-                                <h1>community</h1>
-                                <h1>(กกท)</h1>
-                                <hr>
-                            </div>
-                            <div class="content_txt pb-4">
-                                <p>
-                                    โครงการ Smart community เป็นโครงการของ กกท.
-                                    ที่จะพัฒนาและบริหารพื้นที่โดยรอบเขตรั้วศุลกากร กทท. ให้เกิดประโยชน์สูงสุด
-                                    รวมทั้งพัฒนาคุณภาพของชุมชนและโครงการต่างๆของ กทท.
-                                </p>
-                            </div>
+                <div class="col-md-4">
+                    <div class=topic_p2s3>
+                        <h1>Smart<br>
+                            Community</h1>
+                        <div class="topic_p2s3_subtext">
+                            <h1>— (กกท)</h1>
                         </div>
+                    </div>
+                    <br>
+                    <div class="content_txt_p2s3">
+                        <h5>โครงการ Smart community <br>เป็นนโยบายของ กกท.
+                            ที่จะพัฒนาและบริหารพื้นที่โดยรอบเขตรั้วศุลกากรกทท. ให้เกิดประโยชน์สูงสุด
+                            รวมทั้งพัฒนาคุณภาพของชุมชนและโครงการต่าง ๆ ของ กทท.</h5>
                     </div>
                 </div>
             </div>
-
-            <!-- Contents Section #4 -->
-            <div class="mt_12vh">
-                <div class="row">
-                    <div class="col-md-1"></div>
-                    <div class="col-md-4 middle_vertically">
-                        <div class="contentToBt">
-                            <div class="topicSec2">
-
-                                <div class="center_dis">
-                                    <img class="arrow" src="asset/arrow.svg" alt="">
-                                </div>
-                            </div>
-                            <br><br>
-                            <div class="content_txt">
-                                <p>
-                                    ใช้พื้นที่บริเวณองค์กรการฟอกหนังจำนวน 58 ไร่
-                                    ก่อสร้างเป็นอาคารทรงสูงสำหรับรองรับชุมชนพื้นที่เขตคลองเตยเพื่อเป็นการยกระดับคุณภาพชีวิตความเป็นอยู่ของชุมชนให้ดีขึ้น
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-7">
-                        <br>
-                        <img class="w-100 mt-5" src="asset/page2/page2_img4.png" alt="">
-                    </div>
-                </div>
-            </div>
-
-            <br><br><br><br><br>
-
-            <!-- button -->
-            <div class="text-center">
-                <a href="page3.html">
-                    <p class="myButton">ความเป็นมาของสลัมคลองเตย</p>
-                </a>
-            </div>
-            <br>
         </div>
 
-        <!------------------ Footer ------------------>
+        <!-- Contents Section #4 -->
+        <div class="container mt_10vh">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="topic2Sec4" data-aos="fade-down">
+                        <h5>ใช้พื้นที่บริเวณองค์กรการฟอกหนัง<br>จำนวน 58
+                            ไร่ก่อสร้างเป็นอาคารทรงสูง<br>สำหรับรองรับชุมชนพื้นที่เขตคลองเตย<br>เพื่อเป็นการยกระดับคุณภาพชีวิต<br>ความเป็นอยู่ของชุมชนให้ดีขึ้น
+                        </h5>
+                        <div>
+                            <img src="asset/arrow.svg" alt="" class="arrow_p2s4">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8" data-aos="fade-up">
+                    <img src="asset/page2/page2_img4.png" alt="" class="w-100">
+                </div>
+            </div>
+        </div>
 
-        <footer class="my_footer">
-            <h5 class="fz_400">copyright © Slum Klong Toei</h5>
-        </footer>
+        <!-- button on PC -->
+        <div class="P2Button center_dis text-center d-none d-sm-block">
+            <a href="page3.html">
+                <p class="myButton">ความเป็นมาของสลัมคลองเตย</p>
+            </a>
+        </div>
+        <!-- button on Mobile -->
+        <div class="P2Button_mobile center_dis text-center d-block d-sm-none">
+            <a href="page3.html">
+                <p class="myButton">ความเป็นมาของสลัมคลองเตย</p>
+            </a>
+        </div>
+    </div>
 
-        <!------------------ Link JS ------------------>
-        <script src="script.js"></script>
+    <!------------------ Footer ------------------>
+
+    <footer class="my_footer">
+        <p class="fz_300">เว็บไซต์นี้เป็นส่วนหนึ่งของวิชาออกแบบเว็บไซต์ หลักสูตรนิเทศศิลป์<br>
+            คณะสถาปัตยกรรมศาสตร์และวิชาการโปรแกรมสื่อประสม<br>
+            แขนงวิชาการพัฒนาสื่อประสมและเกม คณะเทคโนโลยีสารสนเทศ<br>
+            สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง ©2020</p>
+    </footer>
+
+    <!------------------ Link JS ------------------>
+    <script src="script.js"></script>
+
+    <!------------------ jquery CDN / scroll effect ------------------>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 400,
+            duration: 1000,
+        });
+    </script>
 </body>
 
 </html>

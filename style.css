@@ -1,6 +1,27 @@
 body {
-    overflow-x: hidden;
+    overflow-x: hidden !important;
     background-color: var(--ci3);
+}
+
+/*------------------------------------------------------------ Root / Components */
+
+:root {
+    --ci1: #6B8CC9 !important;
+    --ci2: #000000 !important;
+    --ci3: #dee1ea !important;
+    --ci4: #c3c8da !important;
+    --kanit: 'Kanit', sans-serif !important;
+    --taviraj: 'Taviraj', serif !important
+}
+
+.vl {
+    border-left: .35em solid var(--ci1);
+    height: 10vw;
+}
+
+.hl {
+    border-top: .15em solid var(--ci1);
+    width: 3em;
 }
 
 .center_dis {
@@ -19,29 +40,25 @@ body {
     padding-right: 6vw !important;
 }
 
-.mt_12vh {
-    margin-top: 12vw;
+.mt_8vh {
+    margin-top: 8vh;
 }
 
-/*------------------------------------------------------------ Root */
-
-:root {
-    --ci1: #6B8CC9 !important;
-    --ci2: #000000 !important;
-    --ci3: #dee1ea !important;
-    --ci4: #c3c8da !important;
-    --kanit: 'Kanit', sans-serif !important;
-    --taviraj: 'Taviraj', serif !important
+.mt_10vh {
+    margin-top: 10vh;
 }
 
-.vl {
-    border-left: .35em solid var(--ci1);
-    height: 10em;
+.mt_20vh {
+    margin-top: 20vh;
 }
 
-.hl {
-    border-top: .25em solid var(--ci1);
-    width: 3em;
+.mt_25vh {
+    margin-top: 25vh;
+}
+
+.contentToBt {
+    position: absolute;
+    bottom: 0;
 }
 
 /*------------------------------------------------------------ Set Color */
@@ -55,7 +72,7 @@ body {
     font-family: var(--taviraj);
 }
 
-/*------------------------------------------------------------ fonts size */
+/*------------------------------------------------------------ set fonts */
 
 .font_Header {
     font-family: var(--taviraj);
@@ -114,7 +131,7 @@ body {
     margin: .25em .5em;
     cursor: pointer;
     font-family: var(--kanit);
-    border-radius: 100em;
+    border-radius: 1em;
     cursor: pointer;
     text-decoration: none !important;
     transition: 0.3s;
@@ -138,7 +155,7 @@ button:focus {
 /*------------------------------------------------------------ NavBar */
 
 .mynavbar_brand {
-    width: 2.5em;
+    width: 2em;
 }
 
 .my_navBg {
@@ -157,11 +174,19 @@ button:focus {
     padding-bottom: 0;
 }
 
+.navbar-nav a:hover {
+    box-shadow: 0px 0.25em var(--ci1);
+}
+
+.navbar-nav a.active {
+    box-shadow: 0px 0.25em var(--ci1);
+}
+
 /* Apply style after scroll */
 
 .scrolling-active {
     background-color: #dee1eae5;
-    box-shadow: 0 3px 1rem rgba(0, 0, 0, 0.1);
+    box-shadow: 0 3px 2rem rgba(0, 0, 0, 0.1);
 }
 
 .scrolling-active-t {
@@ -173,11 +198,37 @@ button:focus {
 
 /*------------------------------------------------------------ Cover */
 
-.zoom {
+.keyart .keyart_layer {
+    height: auto;
+    bottom: 0;
+}
+
+#parallax {
+    display: block;
+}
+
+.keyart {
+    position: relative;
+    z-index: 10;
+}
+
+.keyart_layer {
+    width: 100%;
+    position: absolute;
+}
+
+.keyart_layer.parallax {
+    position: fixed;
+}
+
+/* last parallax */
+
+/* .zoom {
     width: 100%;
     height: 1000px;
     position: relative;
     overflow: hidden;
+
 }
 
 .zoom::before {
@@ -225,12 +276,7 @@ button:focus {
     transform: translateX(-50%);
     z-index: 95;
     right: 0;
-}
-
-.contentToBt {
-    position: absolute;
-    bottom: 0;
-}
+} */
 
 /*------------------------------------------------------------ page1 */
 
@@ -246,12 +292,22 @@ button:focus {
     font-size: medium;
 }
 
+.topicBox {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.753);
+    padding: 2em;
+}
+
+.topicBox h1 {
+    color: var(--ci1);
+    font-size: 4em;
+}
+
 /*------------------------------------------------------------ page1 */
 
 /*------------------------------------------------------------ sec2 */
 
 .topicSec2 {
-    margin-bottom: 0;
     color: var(--ci1);
     font-family: var(--kanit);
 }
@@ -285,26 +341,26 @@ button:focus {
 /*------------------------------------------------------------ sec4 */
 
 .topicSec4 h1 {
-    margin-bottom: 0;
     color: var(--ci1);
     font-family: var(--kanit);
+    font-size: 2.5em;
 }
 
-.arrow {
-    height: 13em;
+.arrow_p1s4 {
+    height: 15em;
 }
 
 /*------------------------------------------------------------ page1 */
 
 /*------------------------------------------------------------ sec5 */
 
-.topicSec5 h5 {
+.topicSec5 h2 {
     margin-bottom: 0;
     color: var(--ci1);
     font-family: var(--kanit);
 }
 
-.contentSec5{
+.contentSec5 {
     margin-top: 20vw;
     position: absolute;
 }
@@ -313,7 +369,7 @@ button:focus {
     font-size: medium;
 }
 
-.sec5xButton{
+.P1Button {
     background-repeat: no-repeat;
     background-size: cover;
     height: 40vw;
@@ -324,56 +380,65 @@ button:focus {
 
 /*------------------------------------------------------------ page2 */
 
-/*------------------------------------------------------------ sec1 */
-
-body {
-    margin-top: auto;
-}
+/*---------------------Aommy---------------------------------- sec1 */
 
 .timeline {
-    border-left: 3px solid var(--ci1);
+    border-left: 3px solid #6B8CC9;
     border-bottom-right-radius: 4px;
     border-top-right-radius: 4px;
     margin: 0 auto;
     letter-spacing: 0.3px;
-    position: relative;
-    line-height: 1.4em;
-    font-size: 1.03em;
+    position: static;
+    line-height: 1.5em;
     padding: 50px;
     list-style: none;
     text-align: left;
     max-width: 50%;
+    font-family: var(--taviraj);
 }
 
-@media (max-width: 767px) {
-    .timeline {
-        max-width: 98%;
-        padding: 25px;
-    }
+.timeline .item {
+    border-left: 3px solid #6B8CC9;
+}
+
+.timeline li:last-child {
+    border-left: 3px solid #6B8CC9;
+    border-bottom-right-radius: 4px;
+    border-top-right-radius: 0px;
 }
 
 .timeline h1 {
-    font-weight: 300;
     font-size: 1.4em;
+    font-family: var(--taviraj);
 }
 
 .timeline h2, .timeline h3 {
-    font-weight: 600;
+    font-family: var(--taviraj);
     font-size: 1rem;
     margin-bottom: 10px;
 }
 
-.timeline .event {
-    border-bottom: 1px dashed #e8ebf1;
-    padding-bottom: 40px;
-    margin-bottom: 40px;
+.timeline .topictimelineblue {
+    font-family: var(--kanit) !important;
+    color: #6B8CC9;
+    font-size: 150%;
     position: relative;
 }
 
-@media (max-width: 767px) {
-    .timeline .event {
-        padding-top: 30px;
-    }
+.timeline .topictimelineblue h2 {
+    font-family: var(--kanit) !important;
+    font-size: 2rem;
+}
+
+.timeline .topictimeline {
+    font-family: var(--taviraj);
+    position: relative;
+}
+
+.timeline .event {
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+    position: relative;
 }
 
 .timeline .event:last-of-type {
@@ -389,37 +454,24 @@ body {
 }
 
 .timeline .event:before {
-    left: -207px;
-    content: attr(data-date);
+    left: -340px;
     text-align: right;
-    font-weight: 100;
-    font-size: 0.9em;
+    content: attr(data-date);
+    color: var(--ci1);
+    font-family: var(--kanit);
+    font-size: 150%;
     min-width: 120px;
 }
 
-@media (max-width: 767px) {
-    .timeline .event:before {
-        left: 0px;
-        text-align: left;
-    }
-}
-
 .timeline .event:after {
-    -webkit-box-shadow: 0 0 0 3px var(--ci1);
-    box-shadow: 0 0 0 3px var(--ci1);
-    left: -55.8px;
-    background: #fff;
-    border-radius: 50%;
-    height: 9px;
-    width: 9px;
+    left: -62.5px;
+    height: 5px;
+    width: 5px;
     content: "";
-    top: 5px;
-}
-
-@media (max-width: 767px) {
-    .timeline .event:after {
-        left: -31.8px;
-    }
+    background-color: #6B8CC9;
+    height: 2px;
+    width: 20px;
+    margin: 12px auto;
 }
 
 .rtl .timeline {
@@ -442,86 +494,95 @@ body {
     right: -55.8px;
 }
 
-/*----------------------------fluke-------------------------------- page 2 */
-
-
-/*-------------------------------fluke----------------------------- sec3 */
-
-.mar_13vh{
-    margin-top: 0vw;
-}
-.mar_14vh{
-    margin-top: 10vw;
-}
-
-.fluketext1 h1{
+.topic_p3s1 h2 {
     margin-bottom: 0;
     color: var(--ci1);
     font-family: var(--kanit);
-    text-align: right ;
-    font-weight: bold;
-
 }
 
-.fluketext2 h1{
-    color: var(--ci1);
-    -webkit-text-fill-color: white; 
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color:var(--ci1);
-    margin-bottom: 0;
+/*------------------------------------------------------------ page2 */
 
-    text-align: right;
-    font-family: var(--kanit);
-}
+/*------------------------------------------------------------ sec2 */
 
-.fluketext3{
+/*------------------------------------------------------------ page2 */
+
+/*------------------------------------------------------------ sec3 */
+
+.topic_p2s3 {
     font-family: var(--taviraj);
     text-align: right;
+    padding-right: 0vw;
+    padding-top: 1vw;
 }
 
-.flukeimg1{
+.topic_p2s3 h1 {
     position: relative;
-    top: 50%;
-    
+    margin-bottom: 0;
+    color: var(--ci1);
+    font-family: var(--kanit);
+    text-align: right;
+    font-weight: bold;
 }
 
-/*----------------------------fluke-------------------------------- page 2 */
+.content_txt_p2s3 {
+    text-align: right;
+    padding-right: 0vw;
+    padding-top: 1vw;
+}
 
+.topic_p2s3_subtext {
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1.75px;
+    -webkit-text-stroke-color: var(--ci1);
+    margin-bottom: 0;
+    text-align: right;
+    font-family: var(--kanit);
+}
 
-/*-------------------------------fluke----------------------------- sec4 */
+/*------------------------------------------------------------ page2 */
 
-.fluketext4{
+/*------------------------------------------------------------ sec4 */
+
+.topic2Sec4 {
     position: relative;
-    top: 44%;
+    right: 0vw;
+    top: 16vw;
     text-align: right;
 }
 
-.flukearrow{
+.arrow_p2s4 {
     position: relative;
-    left :45%;
-    top : 900%;
-    
+    bottom: 22vw;
+    width: 2vw;
+    left: 0vw;
 }
 
-.flukearrowna{
-    display: flex;
-    flex-direction: column;
-    align-items: right;
-    height: 1em;
+.P2Button {
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: -20vh;
+    margin-bottom: -2vw;
+    height: 60vh;
+    width: 100%;
+    padding: 30vh 0 5vh 0;
+    background-image: url('asset/page2/page2_img5.png');
 }
 
-.flukeimg2{
-    position: relative;
-    right: 5%;
+.P2Button_mobile {
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: -12vh;
+    width: 100%;
+    padding: 20vh 0 20vh 0;
+    background-image: url('asset/page2/page2_img5.png');
 }
 
 /*------------------------------------------------------------ page 3 */
 
-
 /*------------------------------------------------------------ sec1 */
 
-
-.topic_P3_Sec1{
+.topic_P3_Sec1 {
     margin-bottom: 0;
     color: var(--ci1);
     font-family: var(--kanit);
@@ -532,7 +593,6 @@ body {
 }
 
 /*------------------------------------------------------------ page 3 */
-
 
 /*------------------------------------------------------------ sec2 */
 
@@ -545,8 +605,8 @@ body {
 }
 
 .img_over {
-  width: 100%;
-  height: auto;
+    width: 100%;
+    height: auto;
 }
 
 .right_dis {
@@ -560,16 +620,54 @@ body {
 
 /*------------------------------------------------------------ page 3 */
 
+/*------------------------------------------------------------ sec2 */
+
+.content_txt_right {
+    font-size: medium;
+    text-align: right;
+    font-family: var(--taviraj)/*----- ไม่มีใน Set Color เลยเติมออกมาก่อน -----*/
+}
+
+.arrow_p3s2 {
+    height: 8em;
+}
+
+.img_over {
+    width: 45em;
+    height: auto;
+}
+
+.right_dis {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+/*------------------------------------------------------------ page 3 */
 
 /*------------------------------------------------------------ sec3 */
 
-.arrow2 {
+.arrow_p3s3 {
     height: 7em;
 }
 
-.animated-gif{
-  width: 100%;
-  height: auto;
+.animated-gif {
+    width: 100%;
+    height: auto;
+}
+
+.content_txt {
+    font-size: medium;
+}
+
+/*  */
+
+.arrow2 {
+    height: 8em;
+}
+
+.animated-gif {
+    width: 35em;
+    height: auto;
 }
 
 .content_txt {
@@ -577,16 +675,17 @@ body {
 }
 
 /*------------------------------------------------------------ page 3 */
-
 
 /*------------------------------------------------------------ sec4 */
 
-.content_txt {
+.content_txt_right {
     font-size: medium;
+    text-align: right;
+    font-family: var(--taviraj)
 }
 
-.arrow2 {
-    height: 7em;
+.arrow_p3s4 {
+    height: 8em;
 }
 
 .right_dis {
@@ -594,9 +693,9 @@ body {
     flex-direction: row-reverse;
 }
 
-.img_over2{
-  width: 100%;
-  height: auto;
+.img_over2 {
+    width: 35em;
+    height: auto;
 }
 
 .mar_5vh {
@@ -604,113 +703,112 @@ body {
 }
 
 /*------------------------------------------------------------ page 3 */
-
 
 /*------------------------------------------------------------ sec5 */
 
-.topic_p3_sec5{
+.topic_p3_sec4 {
     font-size: medium;
     text-align: right;
     color: var(--ci1);
     padding-right: 1cm;
 }
 
-img.sec5{
-    width: 1100px;
+.sec4 {
+    width: 100%;
     height: auto;
     margin-bottom: -9vw;
-    margin-left: -10vw;
+    margin-left: 0vw;
 }
-
 
 /*------------------------------------------------------------ page 3 */
 
+/*------------------------------------------------------------ sec5 */
+
+.topic_p3_sec5 {
+    font-family: var(--kanit);
+    font-size: medium;
+    text-align: right;
+    color: var(--ci1);
+    padding-right: 1cm;
+}
+
+.sec5 {
+    width: 100%;
+    height: auto;
+    margin-bottom: -9vw;
+    margin-left: 0vw;
+}
+
+/*------------------------------------------------------------ page 3 */
 
 /*------------------------------------------------------------ sec6 */
 
-.topic_p3_sec6{
-    font-size: medium;
+.topic_p3_sec6 {
+    font-family: var(--kanit);
     text-align: right;
     color: var(--ci1);
     padding-right: 1cm;
 }
 
-img.sec6{
-    width: 800px;
+.sec6 {
+    width: 100%;
     height: auto;
-    margin-bottom: -7vw;
-    margin-top: -1vw;
 }
 
-
 /*------------------------------------------------------------ page 3 */
-
 
 /*------------------------------------------------------------ sec7 */
 
-.topic_p3_sec7{
-    font-size: medium;
+.topic_p3_sec7 {
+    font-family: var(--kanit);
     text-align: right;
     color: var(--ci1);
-    padding-right: 1cm;
 }
 
-img.sec7{
-    width: 800px;
+.sec7 {
+    width: 100%;
     height: auto;
-    padding-left: 1cm;
-    margin-top: 2vw;
-    margin-bottom: -5vw;
 }
-
 
 /*------------------------------------------------------------ page 3 */
 
-
 /*------------------------------------------------------------ sec8 */
 
-.topic_p3_sec8{
-    font-size: medium;
+.topic_p3_sec8 {
+    font-family: var(--kanit);
     text-align: right;
     color: var(--ci1);
-    padding-right: 1cm;
 }
 
-img.sec8{
-    width: 900px;
+.sec8 {
+    width: 100%;
     height: auto;
-    padding-left: 2cm;
-    margin-top: -2vw;
-    margin-bottom: -17vw;
+    margin-bottom: -15vw;
+    position: relative;
 }
 
-.arrow2 {
-    height: 7em;
-}
-
-.img_over{
-  width: 100%;
-  height: auto;
-}
-
-.right_dis {
-    display: flex;
-    flex-direction: row-reverse;
-}
-
-.mar_5vh {
-    margin-top: 5vw;
+.P3Button {
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40vw;
+    width: 100%;
+    padding: 10vh 0 10vh 0;
+    background-image: url('asset/page3/page3_img8.png');
 }
 
 /*------------------------------------------------------------ Footer */
 
 .my_footer {
-    /* margin-top: 10vw; */
     background: var(--ci1) !important;
     color: white;
-    padding: 2em 2em 1em 2em;
+    padding: 2.5em 0em 2.5em 0em;
     width: 100%;
     overflow: hidden;
     text-align: center;
-    font-family: var(--kanit);
+}
+
+.my_footer p {
+    font-size: small;
+    margin: 0;
+    font-family: var(--taviraj);
 }
