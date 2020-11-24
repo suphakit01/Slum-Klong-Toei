@@ -30,62 +30,29 @@ window.onscroll = function () {
     prevScrollpos = currentScrollPos;
 }
 
-//----------------------------------------------------------------------- Scrolling Fade-in / Fade-out
-
-window.onload = function () {
-    const fadeRight = document.querySelector("#fadeRight");
-    const fadeLeft = document.querySelector("#fadeLeft");
-
-    window.addEventListener('scroll', scrollEffect);
-
-    function scrollEffect() {
-        if (window.scrollY >= 800) {
-            // Right
-            fadeRight.style.opacity = "1";
-            fadeRight.style.transform = 'translateX(0px)';
-            fadeRight.style.transition = '1s ease-in-out';
-
-            // Left
-            fadeLeft.style.opacity = "1";
-            fadeLeft.style.transform = 'translateX(0px)';
-            fadeLeft.style.transition = '1s ease-in-out';
-        }
-        else {
-            // Right
-            fadeRight.style.opacity = '0';
-            fadeRight.style.transform = 'translateX(4vw)';
-
-            // Left
-            fadeLeft.style.opacity = '0';
-            fadeLeft.style.transform = 'translateX(-4vw)';
-        }
-    }
-    scrollEffect();
-
-}
 
 //-----------------------------------------------------------------------Parallax Scrolling Page1
 
 // l,d,x
 function castParallax() {
 
-	var opThresh = 350;
-	var opFactor = 750;
+    var opThresh = 350;
+    var opFactor = 750;
 
-	window.addEventListener("scroll", function(event){
+    window.addEventListener("scroll", function (event) {
 
-		var top = this.pageYOffset;
+        var top = this.pageYOffset;
 
-		var layers = document.getElementsByClassName("parallax");
-		var layer, speed, yPos;
-		for (var i = 0; i < layers.length; i++) {
-			layer = layers[i];
-			speed = layer.getAttribute('data-speed');
-			var yPos = -(top * speed / 100);
-			layer.setAttribute('style', 'transform: translate3d(0px, ' + yPos + 'px, 0px)');
+        var layers = document.getElementsByClassName("parallax");
+        var layer, speed, yPos;
+        for (var i = 0; i < layers.length; i++) {
+            layer = layers[i];
+            speed = layer.getAttribute('data-speed');
+            var yPos = -(top * speed / 100);
+            layer.setAttribute('style', 'transform: translate3d(0px, ' + yPos + 'px, 0px)');
 
-		}
-	});
+        }
+    });
 }
 
 document.body.onload = castParallax();
@@ -137,3 +104,37 @@ document.body.onload = castParallax();
 //         scroll = offset;
 //         layer4.style.width = (100 + scroll / 3.5) + '%';
 //     });
+
+//----------------------------------------------------------------------- Scrolling Fade-in / Fade-out
+
+// window.onload = function () {
+//     const fadeRight = document.querySelector("#fadeRight");
+//     const fadeLeft = document.querySelector("#fadeLeft");
+
+//     window.addEventListener('scroll', scrollEffect);
+
+//     function scrollEffect() {
+//         if (window.scrollY >= 800) {
+//             // Right
+//             fadeRight.style.opacity = "1";
+//             fadeRight.style.transform = 'translateX(0px)';
+//             fadeRight.style.transition = '1s ease-in-out';
+
+//             // Left
+//             fadeLeft.style.opacity = "1";
+//             fadeLeft.style.transform = 'translateX(0px)';
+//             fadeLeft.style.transition = '1s ease-in-out';
+//         }
+//         else {
+//             // Right
+//             fadeRight.style.opacity = '0';
+//             fadeRight.style.transform = 'translateX(4vw)';
+
+//             // Left
+//             fadeLeft.style.opacity = '0';
+//             fadeLeft.style.transform = 'translateX(-4vw)';
+//         }
+//     }
+//     scrollEffect();
+
+// }
